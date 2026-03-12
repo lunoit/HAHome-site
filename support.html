@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support – HAHome</title>
+  <meta name="description" content="Get help with HAHome — the native Apple app for Home Assistant." />
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .support-hero {
+      padding-top: 120px;
+      padding-bottom: 48px;
+      border-bottom: 1px solid var(--border);
+    }
+    .support-body {
+      padding: 64px 0 96px;
+    }
+    .support-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-bottom: 64px;
+    }
+    .support-card {
+      padding: 32px;
+    }
+    .support-card-icon {
+      font-size: 28px;
+      margin-bottom: 16px;
+    }
+    .support-card h3 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .support-card p {
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.65;
+      margin-bottom: 20px;
+    }
+    .support-faq-section h2 {
+      font-size: clamp(22px, 3vw, 32px);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 32px;
+    }
+    .support-faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      max-width: 720px;
+    }
+    .support-faq-list .faq-item { border-radius: var(--radius); overflow: hidden; }
+    @media (max-width: 640px) {
+      .support-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="logo/HAHome-logo.png" alt="HAHome logo" width="28" height="28" style="border-radius:7px;" />
+      HAHome
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html#features">Features</a></li>
+      <li><a href="index.html#domains">Control</a></li>
+      <li><a href="index.html#how">Setup</a></li>
+      <li><a href="index.html#pro">Pro</a></li>
+      <li><a href="index.html#faq">FAQ</a></li>
+    </ul>
+    <a href="index.html#pro" class="nav-cta nav-cta-desktop">Get HAHome Pro</a>
+  </div>
+</nav>
+
+<div class="support-hero">
+  <div class="container">
+    <span class="section-label">Help &amp; Support</span>
+    <h1 style="font-size: clamp(28px, 4vw, 48px); font-weight: 800; letter-spacing: -0.02em; margin-bottom: 12px;">How can we help?</h1>
+    <p class="subtitle">Find answers below, or get in touch directly.</p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="support-body">
+
+    <!-- Contact cards -->
+    <div class="support-grid">
+      <div class="support-card card">
+        <div class="support-card-icon">✉️</div>
+        <h3>Email Support</h3>
+        <p>For bug reports, feature requests, or anything else — drop us a message and we'll get back to you as soon as possible.</p>
+        <a href="mailto:support@hahome.app" class="btn-primary" style="display:inline-flex; font-size:14px; padding:10px 20px;">
+          support@hahome.app
+        </a>
+      </div>
+
+      <div class="support-card card">
+        <div class="support-card-icon">🐛</div>
+        <h3>Report a Bug</h3>
+        <p>Found something that doesn't work right? Include your iOS version, Home Assistant version, and steps to reproduce when you write in.</p>
+        <a href="mailto:support@hahome.app?subject=Bug%20Report" class="btn-secondary" style="display:inline-flex; font-size:14px; padding:10px 20px;">
+          Send bug report
+        </a>
+      </div>
+    </div>
+
+    <!-- Common questions -->
+    <div class="support-faq-section">
+      <h2>Common questions</h2>
+      <div class="support-faq-list">
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            HAHome can't connect to my Home Assistant
+            <svg class="faq-arrow" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            Make sure your Home Assistant URL is correct and reachable from your device. Try opening the URL in Safari first — if it loads, HAHome should be able to connect. If you're connecting remotely, ensure your reverse proxy, Nabu Casa, or VPN is active. Check that your Home Assistant instance is running and not in maintenance mode.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            My entities aren't showing up
+            <svg class="faq-arrow" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            Pull down to refresh on the home screen. If entities are still missing, go to Settings → Reload Entities to resync with your Home Assistant. Make sure the entities are not hidden or disabled in your Home Assistant instance. Free tier limits (10 lights, 5 climate, etc.) may also apply — upgrade to Pro to remove all caps.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            How do I restore my Pro purchase?
+            <svg class="faq-arrow" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            Go to Settings → HAHome Pro → Restore Purchase. Make sure you're signed in with the same Apple ID used for the original purchase. If you purchased through Family Sharing, ensure Family Sharing is enabled in your Apple ID settings.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            The app is showing stale / outdated states
+            <svg class="faq-arrow" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            HAHome uses a WebSocket connection for live updates. If states appear stale, the connection may have dropped. Try pulling down to refresh. If the issue persists, force-close the app and reopen it to re-establish the WebSocket connection. Check that your Home Assistant instance is responsive.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            How do I delete my account / data?
+            <svg class="faq-arrow" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            HAHome doesn't store any personal data on external servers — everything lives on your device and your own Home Assistant. To remove all app data, go to Settings → Sign Out, then delete the app from your device. This removes the stored access token from the iOS Keychain and all local app data.
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo/HAHome-logo.png" alt="HAHome logo" width="28" height="28" style="border-radius:7px;" />
+        HAHome
+      </div>
+      <div class="footer-links">
+        <a href="index.html#features">Features</a>
+        <a href="index.html#domains">Control</a>
+        <a href="index.html#how">Setup</a>
+        <a href="index.html#pro">Pro</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="support.html">Support</a>
+      </div>
+      <p class="footer-note">
+        HAHome is an independent app and is not affiliated with the Home Assistant project or Nabu Casa.<br>
+        &copy; 2026 HAHome. All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(btn) {
+    const answer = btn.nextElementSibling;
+    const isOpen = btn.classList.contains('open');
+    document.querySelectorAll('.faq-question.open').forEach(q => {
+      q.classList.remove('open');
+      q.nextElementSibling.classList.remove('open');
+    });
+    if (!isOpen) {
+      btn.classList.add('open');
+      answer.classList.add('open');
+    }
+  }
+</script>
+</body>
+</html>

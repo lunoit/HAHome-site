@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – HAHome</title>
+  <meta name="description" content="HAHome Privacy Policy. We don't collect your data." />
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .policy-hero {
+      padding-top: 120px;
+      padding-bottom: 48px;
+      border-bottom: 1px solid var(--border);
+    }
+    .policy-body {
+      padding: 64px 0 96px;
+      max-width: 720px;
+    }
+    .policy-body h2 {
+      font-size: 22px;
+      font-weight: 700;
+      margin: 40px 0 12px;
+    }
+    .policy-body h2:first-child { margin-top: 0; }
+    .policy-body p, .policy-body li {
+      font-size: 15px;
+      color: var(--muted);
+      line-height: 1.75;
+    }
+    .policy-body ul {
+      padding-left: 20px;
+      margin-top: 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .policy-body a { color: var(--accent); }
+    .policy-body a:hover { text-decoration: underline; }
+    .policy-updated {
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 6px;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="logo/HAHome-logo.png" alt="HAHome logo" width="28" height="28" style="border-radius:7px;" />
+      HAHome
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html#features">Features</a></li>
+      <li><a href="index.html#domains">Control</a></li>
+      <li><a href="index.html#how">Setup</a></li>
+      <li><a href="index.html#pro">Pro</a></li>
+      <li><a href="index.html#faq">FAQ</a></li>
+    </ul>
+    <a href="index.html#pro" class="nav-cta nav-cta-desktop">Get HAHome Pro</a>
+  </div>
+</nav>
+
+<div class="policy-hero">
+  <div class="container">
+    <span class="section-label">Legal</span>
+    <h1 style="font-size: clamp(28px, 4vw, 48px); font-weight: 800; letter-spacing: -0.02em; margin-bottom: 8px;">Privacy Policy</h1>
+    <p class="policy-updated">Last updated: March 2026</p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="policy-body">
+
+    <h2>Overview</h2>
+    <p>HAHome is designed with privacy at its core. The app communicates exclusively with your own Home Assistant server. We do not operate any backend servers, collect personal data, or track your usage in any way.</p>
+
+    <h2>Data We Do Not Collect</h2>
+    <p>HAHome does not collect, store, or transmit:</p>
+    <ul>
+      <li>Personal information (name, email, location)</li>
+      <li>Usage analytics or telemetry</li>
+      <li>Home Assistant entity data or states</li>
+      <li>Device identifiers or advertising IDs</li>
+      <li>Crash reports sent to our servers</li>
+    </ul>
+
+    <h2>Your Credentials</h2>
+    <p>When you log in to your Home Assistant instance via OAuth, the resulting access token is stored exclusively in the iOS Keychain on your device. It is never transmitted to any server other than your own Home Assistant instance.</p>
+
+    <h2>Layout Sharing</h2>
+    <p>If you use the Pro layout sharing feature, an encrypted snapshot of your chosen entity layout is embedded in an invite link. This data is not stored on any HAHome server — the link itself carries the encrypted payload directly. Only people you explicitly share the link with can import your layout.</p>
+
+    <h2>Third-Party Services</h2>
+    <p>HAHome does not integrate any third-party analytics, advertising, or crash-reporting SDKs. The only network communication the app performs is directly between your device and your Home Assistant server.</p>
+
+    <h2>In-App Purchases</h2>
+    <p>HAHome Pro is purchased through Apple's App Store. Apple handles all payment processing. HAHome does not receive or store any payment or billing information.</p>
+
+    <h2>Children's Privacy</h2>
+    <p>HAHome does not knowingly collect any information from children under 13. Because we collect no personal data from any user, the app is safe for all ages.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>If we make material changes to this policy, we will update the date at the top of this page. Continued use of the app after any changes constitutes acceptance of the updated policy.</p>
+
+    <h2>Contact</h2>
+    <p>If you have questions about this privacy policy, please reach out via the <a href="support.html">Support</a> page.</p>
+
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo/HAHome-logo.png" alt="HAHome logo" width="28" height="28" style="border-radius:7px;" />
+        HAHome
+      </div>
+      <div class="footer-links">
+        <a href="index.html#features">Features</a>
+        <a href="index.html#domains">Control</a>
+        <a href="index.html#how">Setup</a>
+        <a href="index.html#pro">Pro</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="support.html">Support</a>
+      </div>
+      <p class="footer-note">
+        HAHome is an independent app and is not affiliated with the Home Assistant project or Nabu Casa.<br>
+        &copy; 2026 HAHome. All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
