@@ -348,7 +348,7 @@ nav {
 /* ── Screenshots ──────────────────────────────────────────── */
 #screenshots {
   padding-bottom: 0;
-  overflow: hidden;
+  overflow-x: clip;
 }
 
 .screenshots-header {
@@ -360,6 +360,11 @@ nav {
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
   padding-bottom: 48px;
+  cursor: grab;
+}
+
+.screenshots-scroll:active {
+  cursor: grabbing;
 }
 
 .screenshots-scroll::-webkit-scrollbar { display: none; }

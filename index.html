@@ -13,10 +13,10 @@
 <!-- ── Nav ────────────────────────────────────────────────────── -->
 <nav>
   <div class="nav-inner">
-    <div class="nav-logo">
+    <a href="#hero" class="nav-logo">
       <img src="logo/HAHome-logo.png" alt="HAHome logo" width="28" height="28" style="border-radius:7px;" />
       HAHome
-    </div>
+    </a>
     <ul class="nav-links" id="nav-links">
       <li><a href="#features" onclick="closeMenu()">Features</a></li>
       <li><a href="#domains" onclick="closeMenu()">Control</a></li>
@@ -74,13 +74,13 @@
     <!-- Phone Mockups -->
     <div class="hero-mockup">
       <div class="phone-frame side">
-        <img src="screenshots/IMG_1092.jpeg" alt="HAHome lights screen" />
+        <img src="screenshots/IMG_1103.jpeg" alt="HAHome lights screen" />
       </div>
       <div class="phone-frame center">
-        <img src="screenshots/IMG_1093.jpeg" alt="HAHome home dashboard" />
+        <img src="screenshots/IMG_1104.jpeg" alt="HAHome home dashboard" />
       </div>
       <div class="phone-frame side">
-        <img src="screenshots/IMG_1094.jpeg" alt="HAHome climate screen" />
+        <img src="screenshots/IMG_1105.jpeg" alt="HAHome climate screen" />
       </div>
     </div>
   </div>
@@ -118,13 +118,13 @@
       <div class="feature-card card">
         <div class="feature-icon" style="background:rgba(245,158,11,0.12);">🎨</div>
         <h3>Themes & Wallpapers</h3>
-        <p>Choose from seven free app themes — Midnight, Deep Space, Ocean, Sunset and more. Each room can have its own wallpaper.</p>
+        <p>Choose from six free app themes — Midnight, Deep Space, Forest, Ocean, Sunset and more. Unlock seven exclusive Pro themes. Each room can have its own wallpaper.</p>
       </div>
 
       <div class="feature-card card">
         <div class="feature-icon" style="background:rgba(45,212,191,0.12);">🔒</div>
         <h3>Secure & Private</h3>
-        <p>Credentials are stored in the iOS Keychain. OAuth login protects your Home Assistant instance. No third-party servers involved.</p>
+        <p>Credentials are stored in the iOS Keychain. OAuth with PKCE and Trust-on-First-Use certificate pinning protect your connection. No third-party servers involved.</p>
       </div>
 
       <div class="feature-card card">
@@ -160,15 +160,16 @@
   </div>
   <div class="screenshots-scroll">
     <div class="screenshots-track">
-      <div class="screenshot-frame"><img src="screenshots/IMG_1092.jpeg" alt="Screenshot 1" /></div>
-      <div class="screenshot-frame"><img src="screenshots/IMG_1093.jpeg" alt="Screenshot 2" /></div>
-      <div class="screenshot-frame"><img src="screenshots/IMG_1094.jpeg" alt="Screenshot 3" /></div>
-      <div class="screenshot-frame"><img src="screenshots/IMG_1095.jpeg" alt="Screenshot 4" /></div>
-      <div class="screenshot-frame"><img src="screenshots/IMG_1096.jpeg" alt="Screenshot 5" /></div>
-      <div class="screenshot-frame"><img src="screenshots/IMG_1097.jpeg" alt="Screenshot 6" /></div>
-      <div class="screenshot-frame"><img src="screenshots/IMG_1098.jpeg" alt="Screenshot 7" /></div>
-      <div class="screenshot-frame"><img src="screenshots/IMG_1099.jpeg" alt="Screenshot 8" /></div>
-      <div class="screenshot-frame"><img src="screenshots/IMG_1100.jpeg" alt="Screenshot 9" /></div>
+      <div class="screenshot-frame"><img src="screenshots/IMG_1103.jpeg" alt="Screenshot 1" /></div>
+      <div class="screenshot-frame"><img src="screenshots/IMG_1104.jpeg" alt="Screenshot 2" /></div>
+      <div class="screenshot-frame"><img src="screenshots/IMG_1105.jpeg" alt="Screenshot 3" /></div>
+      <div class="screenshot-frame"><img src="screenshots/IMG_1106.jpeg" alt="Screenshot 4" /></div>
+      <div class="screenshot-frame"><img src="screenshots/IMG_1107.jpeg" alt="Screenshot 5" /></div>
+      <div class="screenshot-frame"><img src="screenshots/IMG_1108.jpeg" alt="Screenshot 6" /></div>
+      <div class="screenshot-frame"><img src="screenshots/IMG_1109.jpeg" alt="Screenshot 7" /></div>
+      <div class="screenshot-frame"><img src="screenshots/IMG_1110.jpeg" alt="Screenshot 8" /></div>
+      <div class="screenshot-frame"><img src="screenshots/IMG_1111.jpeg" alt="Screenshot 9" /></div>
+      <div class="screenshot-frame"><img src="screenshots/IMG_1112.jpeg" alt="Screenshot 10" /></div>
     </div>
   </div>
 </section>
@@ -212,6 +213,12 @@
         <div class="domain-icon" style="background:rgba(52,211,153,0.12);">🔌</div>
         <h3>Switches</h3>
         <p>One-tap toggles for smart plugs, relays and any on/off device in your setup.</p>
+      </div>
+
+      <div class="domain-card card">
+        <div class="domain-icon" style="background:rgba(45,212,191,0.12);">🌀</div>
+        <h3>Fans</h3>
+        <p>Speed control, preset modes and oscillation toggle. Includes air purifier support with dedicated controls.</p>
       </div>
 
       <div class="domain-card card">
@@ -315,6 +322,12 @@
             </span>
             <span><strong>Family Sharing</strong> — one purchase covers your whole family via Apple Family Sharing</span>
           </li>
+          <li>
+            <span class="check">
+              <svg fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            </span>
+            <span><strong>State history</strong> — view date-grouped state changes for any entity over the past 1, 2, 3 or 7 days</span>
+          </li>
         </ul>
 
         <div class="pro-price">
@@ -331,20 +344,29 @@
 
       <div class="pro-card-visual">
         <div class="pro-icon-row">
-          <div class="pro-icon-chip">🎨 Exclusive Themes</div>
+          <div class="pro-icon-chip">🎨 7 Exclusive Themes</div>
           <div class="pro-icon-chip">♾️ Unlimited Entities</div>
           <div class="pro-icon-chip">📤 Layout Sharing</div>
           <div class="pro-icon-chip">🔀 Reorder Tiles</div>
+          <div class="pro-icon-chip">📅 State History</div>
         </div>
-        <p class="pro-desc">Free tier includes 10 lights, 5 climate, 5 covers, 5 media players and 5 automations. Upgrade to Pro for no limits and the full feature set.</p>
+        <p class="pro-desc">Free tier includes 10 lights, 5 climate, 5 covers, 5 media players and 5 automations. Upgrade to Pro to remove all limits and unlock the full feature set.</p>
         <div class="pro-themes">
-          <div class="theme-swatch" style="background:linear-gradient(135deg,#0d1117,#1a1a2e)" title="Midnight"></div>
-          <div class="theme-swatch" style="background:linear-gradient(135deg,#0a0a1a,#1a0a2e)" title="Deep Space"></div>
-          <div class="theme-swatch" style="background:linear-gradient(135deg,#0a1a0a,#0d2a0d)" title="Forest"></div>
-          <div class="theme-swatch" style="background:linear-gradient(135deg,#0a1020,#0d1a2a)" title="Ocean"></div>
-          <div class="theme-swatch" style="background:linear-gradient(135deg,#2a0a0a,#1a1004)" title="Sunset"></div>
-          <div class="theme-swatch" style="background:linear-gradient(135deg,#141414,#1a1a22)" title="Slate"></div>
-          <div class="theme-swatch" style="background:linear-gradient(135deg,#5b8dee44,#7c5cf744);border:1px dashed rgba(124,92,247,0.4);" title="+ Pro themes"></div>
+          <!-- 6 free themes -->
+          <div class="theme-swatch" style="background:linear-gradient(135deg,#0d1117,#1a1a2e)" title="Midnight (free)"></div>
+          <div class="theme-swatch" style="background:linear-gradient(135deg,#0a0a1a,#1a0a2e)" title="Deep Space (free)"></div>
+          <div class="theme-swatch" style="background:linear-gradient(135deg,#0a1a0a,#0d2a0d)" title="Forest (free)"></div>
+          <div class="theme-swatch" style="background:linear-gradient(135deg,#0a1020,#0d1a2a)" title="Ocean (free)"></div>
+          <div class="theme-swatch" style="background:linear-gradient(135deg,#2a0a0a,#1a1004)" title="Sunset (free)"></div>
+          <div class="theme-swatch" style="background:linear-gradient(135deg,#141414,#1a1a22)" title="Default (free)"></div>
+          <!-- 7 Pro themes -->
+          <div class="theme-swatch" style="background:linear-gradient(135deg,#1a1f29,#1c242e)" title="Slate (Pro)"></div>
+          <div class="theme-swatch" style="background:linear-gradient(135deg,#f0e0c2,#e6d1ad)" title="Warm Sand (Pro)"></div>
+          <div class="theme-swatch" style="background:linear-gradient(135deg,#fcd1db,#e0c2f5)" title="Blossom (Pro)"></div>
+          <div class="theme-swatch" style="background:linear-gradient(135deg,#c2f5f0,#b3e0fc)" title="Lagoon (Pro)"></div>
+          <div class="theme-swatch" style="background:linear-gradient(135deg,#05142e,#0f0a38)" title="Aurora (Pro)"></div>
+          <div class="theme-swatch" style="background:linear-gradient(135deg,#fce0cc,#fae6d6)" title="Peach Mist (Pro)"></div>
+          <div class="theme-swatch" style="background:linear-gradient(135deg,#1a0a0a,#1f0a0f)" title="Ember (Pro)"></div>
         </div>
       </div>
     </div>
@@ -408,7 +430,7 @@
           <svg class="faq-arrow" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
         </button>
         <div class="faq-answer">
-          The free version lets you control up to 10 lights, 5 climate devices, 5 covers, 5 media players and 5 automations. Security cameras and energy monitoring are always unlimited. <strong>HAHome Pro ($0.99, one-time)</strong> removes all entity limits, unlocks exclusive app themes, a full device icon library, the ability to reorder home tiles, and layout sharing with up to 9 people.
+          The free version lets you control up to 10 lights, 5 climate devices, 5 covers, 5 media players and 5 automations. Security cameras and energy monitoring are always unlimited. <strong>HAHome Pro ($0.99, one-time)</strong> removes all entity limits, unlocks 7 exclusive app themes, a full device icon library, the ability to reorder home tiles, layout sharing with up to 9 people, and state history for any entity (1, 2, 3 or 7 days).
         </div>
       </div>
 
@@ -448,7 +470,7 @@
           <svg class="faq-arrow" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
         </button>
         <div class="faq-answer">
-          HAHome supports lights, climate (HVAC, fans, sensors), covers (blinds, shutters, garage doors), media players, switches, security (cameras, door/window/motion/smoke sensors, alarm panels), automations, scenes, scripts, and energy sensors (solar, grid, battery, gas, water). More entity types may be added in future updates.
+          HAHome supports lights, climate (HVAC, fans, temperature &amp; humidity sensors), covers (blinds, shutters, garage doors), media players, remotes, switches, fans, security (cameras, door/window/motion/smoke sensors, alarm panels), automations, scenes, scripts, and energy sensors (solar, grid, battery, gas, water). More entity types may be added in future updates.
         </div>
       </div>
 
@@ -493,35 +515,6 @@
   </div>
 </footer>
 
-<script>
-  function toggleMenu() {
-    const mobile = document.getElementById('nav-mobile');
-    const btn = document.getElementById('nav-hamburger');
-    const open = mobile.classList.toggle('open');
-    btn.classList.toggle('open', open);
-  }
-
-  function closeMenu() {
-    document.getElementById('nav-mobile').classList.remove('open');
-    document.getElementById('nav-hamburger').classList.remove('open');
-  }
-
-  function toggleFaq(btn) {
-    const answer = btn.nextElementSibling;
-    const isOpen = btn.classList.contains('open');
-
-    // Close all
-    document.querySelectorAll('.faq-question.open').forEach(q => {
-      q.classList.remove('open');
-      q.nextElementSibling.classList.remove('open');
-    });
-
-    // Open this one if it was closed
-    if (!isOpen) {
-      btn.classList.add('open');
-      answer.classList.add('open');
-    }
-  }
-</script>
+<script src="scripts.js"></script>
 </body>
 </html>
