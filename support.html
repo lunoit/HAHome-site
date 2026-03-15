@@ -66,21 +66,34 @@
       HAHome
     </a>
     <ul class="nav-links">
-      <li><a href="index.html#features">Features</a></li>
-      <li><a href="index.html#domains">Control</a></li>
-      <li><a href="index.html#how">Setup</a></li>
-      <li><a href="index.html#pro">Pro</a></li>
-      <li><a href="index.html#faq">FAQ</a></li>
+      <li><a href="index.html#features" data-i18n="nav.features">Features</a></li>
+      <li><a href="index.html#domains" data-i18n="nav.control">Control</a></li>
+      <li><a href="index.html#how" data-i18n="nav.setup">Setup</a></li>
+      <li><a href="index.html#pro" data-i18n="nav.pro">Pro</a></li>
+      <li><a href="index.html#faq" data-i18n="nav.faq">FAQ</a></li>
     </ul>
-    <a href="index.html#pro" class="nav-cta nav-cta-desktop">Get HAHome Pro</a>
+    <div class="lang-picker">
+      <button class="lang-toggle" onclick="document.querySelector('.lang-dropdown').classList.toggle('open')" aria-label="Change language">
+        <span class="lang-current"></span>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="lang-dropdown">
+        <button class="lang-option" data-lang="en" onclick="setLanguage('en')">🇬🇧 English</button>
+        <button class="lang-option" data-lang="nl" onclick="setLanguage('nl')">🇳🇱 Nederlands</button>
+        <button class="lang-option" data-lang="fr" onclick="setLanguage('fr')">🇫🇷 Français</button>
+        <button class="lang-option" data-lang="de" onclick="setLanguage('de')">🇩🇪 Deutsch</button>
+        <button class="lang-option" data-lang="es" onclick="setLanguage('es')">🇪🇸 Español</button>
+      </div>
+    </div>
+    <a href="index.html#pro" class="nav-cta nav-cta-desktop" data-i18n="nav.cta">Get HAHome Pro</a>
   </div>
 </nav>
 
 <div class="support-hero">
   <div class="container">
-    <span class="section-label">Help &amp; Support</span>
-    <h1 style="font-size: clamp(28px, 4vw, 48px); font-weight: 800; letter-spacing: -0.02em; margin-bottom: 12px;">How can we help?</h1>
-    <p class="subtitle">Find answers below, or get in touch directly.</p>
+    <span class="section-label" data-i18n="support.label">Help &amp; Support</span>
+    <h1 style="font-size: clamp(28px, 4vw, 48px); font-weight: 800; letter-spacing: -0.02em; margin-bottom: 12px;" data-i18n="support.title">How can we help?</h1>
+    <p class="subtitle" data-i18n="support.subtitle">Find answers below, or get in touch directly.</p>
   </div>
 </div>
 
@@ -91,8 +104,8 @@
     <div class="support-grid">
       <div class="support-card card">
         <div class="support-card-icon">✉️</div>
-        <h3>Email Support</h3>
-        <p>For bug reports, feature requests, or anything else — drop us a message and we'll get back to you as soon as possible.</p>
+        <h3 data-i18n="support.email.title">Email Support</h3>
+        <p data-i18n="support.email.desc">For bug reports, feature requests, or anything else — drop us a message and we'll get back to you as soon as possible.</p>
         <a href="mailto:support@hahome.io" class="btn-primary" style="display:inline-flex; font-size:14px; padding:10px 20px;">
           support@hahome.io
         </a>
@@ -100,9 +113,9 @@
 
       <div class="support-card card">
         <div class="support-card-icon">🐛</div>
-        <h3>Report a Bug</h3>
-        <p>Found something that doesn't work right? Include your iOS version, Home Assistant version, and steps to reproduce when you write in.</p>
-        <a href="mailto:support@hahome.io?subject=Bug%20Report" class="btn-secondary" style="display:inline-flex; font-size:14px; padding:10px 20px;">
+        <h3 data-i18n="support.bug.title">Report a Bug</h3>
+        <p data-i18n="support.bug.desc">Found something that doesn't work right? Include your iOS version, Home Assistant version, and steps to reproduce when you write in.</p>
+        <a href="mailto:support@hahome.io?subject=Bug%20Report" class="btn-secondary" style="display:inline-flex; font-size:14px; padding:10px 20px;" data-i18n="support.bug.cta">
           Send bug report
         </a>
       </div>
@@ -110,55 +123,55 @@
 
     <!-- Common questions -->
     <div class="support-faq-section">
-      <h2>Common questions</h2>
+      <h2 data-i18n="support.common">Common questions</h2>
       <div class="support-faq-list">
 
         <div class="faq-item">
           <button class="faq-question" onclick="toggleFaq(this)">
-            HAHome can't connect to my Home Assistant
+            <span data-i18n="support.q1">HAHome can't connect to my Home Assistant</span>
             <svg class="faq-arrow" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
           </button>
-          <div class="faq-answer">
+          <div class="faq-answer" data-i18n="support.a1">
             Make sure your Home Assistant URL is correct and reachable from your device. Try opening the URL in Safari first — if it loads, HAHome should be able to connect. If you're connecting remotely, ensure your reverse proxy, Nabu Casa, or VPN is active. Check that your Home Assistant instance is running and not in maintenance mode.
           </div>
         </div>
 
         <div class="faq-item">
           <button class="faq-question" onclick="toggleFaq(this)">
-            My entities aren't showing up
+            <span data-i18n="support.q2">My entities aren't showing up</span>
             <svg class="faq-arrow" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
           </button>
-          <div class="faq-answer">
+          <div class="faq-answer" data-i18n="support.a2">
             Make sure the entities are not hidden or disabled in your Home Assistant instance. Try force-closing the app and reopening it to resync with your server. Free tier limits (10 lights, 5 climate, etc.) may also apply — upgrade to Pro to remove all caps.
           </div>
         </div>
 
         <div class="faq-item">
           <button class="faq-question" onclick="toggleFaq(this)">
-            How do I restore my Pro purchase?
+            <span data-i18n="support.q3">How do I restore my Pro purchase?</span>
             <svg class="faq-arrow" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
           </button>
-          <div class="faq-answer">
+          <div class="faq-answer" data-i18n="support.a3">
             Go to Settings → HAHome Pro → Restore Purchase. Make sure you're signed in with the same Apple ID used for the original purchase. If you purchased through Family Sharing, ensure Family Sharing is enabled in your Apple ID settings.
           </div>
         </div>
 
         <div class="faq-item">
           <button class="faq-question" onclick="toggleFaq(this)">
-            The app is showing stale / outdated states
+            <span data-i18n="support.q4">The app is showing stale / outdated states</span>
             <svg class="faq-arrow" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
           </button>
-          <div class="faq-answer">
+          <div class="faq-answer" data-i18n="support.a4">
             HAHome uses a WebSocket connection for live updates. If states appear stale, the connection may have dropped. Force-close the app and reopen it to re-establish the WebSocket connection. Check that your Home Assistant instance is responsive.
           </div>
         </div>
 
         <div class="faq-item">
           <button class="faq-question" onclick="toggleFaq(this)">
-            How do I delete my account / data?
+            <span data-i18n="support.q5">How do I delete my account / data?</span>
             <svg class="faq-arrow" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
           </button>
-          <div class="faq-answer">
+          <div class="faq-answer" data-i18n="support.a5">
             HAHome doesn't store any personal data on external servers — everything lives on your device and your own Home Assistant. To remove all app data, go to Settings → Sign Out, then delete the app from your device. This removes the stored access token from the iOS Keychain and all local app data.
           </div>
         </div>
@@ -177,15 +190,15 @@
         HAHome
       </div>
       <div class="footer-links">
-        <a href="index.html#features">Features</a>
-        <a href="index.html#domains">Control</a>
-        <a href="index.html#how">Setup</a>
-        <a href="index.html#pro">Pro</a>
-        <a href="index.html#faq">FAQ</a>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="support.html">Support</a>
+        <a href="index.html#features" data-i18n="nav.features">Features</a>
+        <a href="index.html#domains" data-i18n="nav.control">Control</a>
+        <a href="index.html#how" data-i18n="nav.setup">Setup</a>
+        <a href="index.html#pro" data-i18n="nav.pro">Pro</a>
+        <a href="index.html#faq" data-i18n="nav.faq">FAQ</a>
+        <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+        <a href="support.html" data-i18n="footer.support">Support</a>
       </div>
-      <p class="footer-note">
+      <p class="footer-note" data-i18n-html="footer.note">
         HAHome is an independent app and is not affiliated with the Home Assistant project or Nabu Casa.<br>
         &copy; 2026 HAHome. All rights reserved.
       </p>
@@ -193,6 +206,7 @@
   </div>
 </footer>
 
+<script src="i18n.js"></script>
 <script src="scripts.js"></script>
 </body>
 </html>

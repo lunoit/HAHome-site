@@ -52,60 +52,73 @@
       HAHome
     </a>
     <ul class="nav-links">
-      <li><a href="index.html#features">Features</a></li>
-      <li><a href="index.html#domains">Control</a></li>
-      <li><a href="index.html#how">Setup</a></li>
-      <li><a href="index.html#pro">Pro</a></li>
-      <li><a href="index.html#faq">FAQ</a></li>
+      <li><a href="index.html#features" data-i18n="nav.features">Features</a></li>
+      <li><a href="index.html#domains" data-i18n="nav.control">Control</a></li>
+      <li><a href="index.html#how" data-i18n="nav.setup">Setup</a></li>
+      <li><a href="index.html#pro" data-i18n="nav.pro">Pro</a></li>
+      <li><a href="index.html#faq" data-i18n="nav.faq">FAQ</a></li>
     </ul>
-    <a href="index.html#pro" class="nav-cta nav-cta-desktop">Get HAHome Pro</a>
+    <div class="lang-picker">
+      <button class="lang-toggle" onclick="document.querySelector('.lang-dropdown').classList.toggle('open')" aria-label="Change language">
+        <span class="lang-current"></span>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="lang-dropdown">
+        <button class="lang-option" data-lang="en" onclick="setLanguage('en')">🇬🇧 English</button>
+        <button class="lang-option" data-lang="nl" onclick="setLanguage('nl')">🇳🇱 Nederlands</button>
+        <button class="lang-option" data-lang="fr" onclick="setLanguage('fr')">🇫🇷 Français</button>
+        <button class="lang-option" data-lang="de" onclick="setLanguage('de')">🇩🇪 Deutsch</button>
+        <button class="lang-option" data-lang="es" onclick="setLanguage('es')">🇪🇸 Español</button>
+      </div>
+    </div>
+    <a href="index.html#pro" class="nav-cta nav-cta-desktop" data-i18n="nav.cta">Get HAHome Pro</a>
   </div>
 </nav>
 
 <div class="policy-hero">
   <div class="container">
-    <span class="section-label">Legal</span>
-    <h1 style="font-size: clamp(28px, 4vw, 48px); font-weight: 800; letter-spacing: -0.02em; margin-bottom: 8px;">Privacy Policy</h1>
-    <p class="policy-updated">Last updated: March 2026</p>
+    <span class="section-label" data-i18n="privacy.label">Legal</span>
+    <h1 style="font-size: clamp(28px, 4vw, 48px); font-weight: 800; letter-spacing: -0.02em; margin-bottom: 8px;" data-i18n="privacy.title">Privacy Policy</h1>
+    <p class="policy-updated" data-i18n="privacy.updated">Last updated: March 2026</p>
   </div>
 </div>
 
 <div class="container">
   <div class="policy-body">
 
-    <h2>Overview</h2>
-    <p>HAHome is designed with privacy at its core. The app communicates exclusively with your own Home Assistant server. We do not operate any backend servers, collect personal data, or track your usage in any way.</p>
+    <h2 data-i18n="privacy.overview.title">Overview</h2>
+    <p data-i18n="privacy.overview.desc">HAHome is designed with privacy at its core. The app communicates exclusively with your own Home Assistant server. We do not operate any backend servers, collect personal data, or track your usage in any way.</p>
 
-    <h2>Data We Do Not Collect</h2>
-    <p>HAHome does not collect, store, or transmit:</p>
+    <h2 data-i18n="privacy.nocollect.title">Data We Do Not Collect</h2>
+    <p data-i18n="privacy.nocollect.desc">HAHome does not collect, store, or transmit:</p>
     <ul>
-      <li>Personal information (name, email, location)</li>
-      <li>Usage analytics or telemetry</li>
-      <li>Home Assistant entity data or states</li>
-      <li>Device identifiers or advertising IDs</li>
-      <li>Crash reports sent to our servers</li>
+      <li data-i18n="privacy.nocollect.1">Personal information (name, email, location)</li>
+      <li data-i18n="privacy.nocollect.2">Usage analytics or telemetry</li>
+      <li data-i18n="privacy.nocollect.3">Home Assistant entity data or states</li>
+      <li data-i18n="privacy.nocollect.4">Device identifiers or advertising IDs</li>
+      <li data-i18n="privacy.nocollect.5">Crash reports sent to our servers</li>
     </ul>
 
-    <h2>Your Credentials</h2>
-    <p>When you log in to your Home Assistant instance via OAuth, the resulting access token is stored exclusively in the iOS Keychain on your device. It is never transmitted to any server other than your own Home Assistant instance.</p>
+    <h2 data-i18n="privacy.credentials.title">Your Credentials</h2>
+    <p data-i18n="privacy.credentials.desc">When you log in to your Home Assistant instance via OAuth, the resulting access token is stored exclusively in the iOS Keychain on your device. It is never transmitted to any server other than your own Home Assistant instance.</p>
 
-    <h2>Layout Sharing</h2>
-    <p>If you use the Pro layout sharing feature, an encrypted snapshot of your chosen entity layout is embedded in an invite link. This data is not stored on any HAHome server — the link itself carries the encrypted payload directly. Only people you explicitly share the link with can import your layout.</p>
+    <h2 data-i18n="privacy.sharing.title">Layout Sharing</h2>
+    <p data-i18n="privacy.sharing.desc">If you use the Pro layout sharing feature, an encrypted snapshot of your chosen entity layout is embedded in an invite link. This data is not stored on any HAHome server — the link itself carries the encrypted payload directly. Only people you explicitly share the link with can import your layout.</p>
 
-    <h2>Third-Party Services</h2>
-    <p>HAHome does not integrate any third-party analytics, advertising, or crash-reporting SDKs. The only network communication the app performs is directly between your device and your Home Assistant server.</p>
+    <h2 data-i18n="privacy.thirdparty.title">Third-Party Services</h2>
+    <p data-i18n="privacy.thirdparty.desc">HAHome does not integrate any third-party analytics, advertising, or crash-reporting SDKs. The only network communication the app performs is directly between your device and your Home Assistant server.</p>
 
-    <h2>In-App Purchases</h2>
-    <p>HAHome Pro is purchased through Apple's App Store. Apple handles all payment processing. HAHome does not receive or store any payment or billing information.</p>
+    <h2 data-i18n="privacy.iap.title">In-App Purchases</h2>
+    <p data-i18n="privacy.iap.desc">HAHome Pro is purchased through Apple's App Store. Apple handles all payment processing. HAHome does not receive or store any payment or billing information.</p>
 
-    <h2>Children's Privacy</h2>
-    <p>HAHome does not knowingly collect any information from children under 13. Because we collect no personal data from any user, the app is safe for all ages.</p>
+    <h2 data-i18n="privacy.children.title">Children's Privacy</h2>
+    <p data-i18n="privacy.children.desc">HAHome does not knowingly collect any information from children under 13. Because we collect no personal data from any user, the app is safe for all ages.</p>
 
-    <h2>Changes to This Policy</h2>
-    <p>If we make material changes to this policy, we will update the date at the top of this page. Continued use of the app after any changes constitutes acceptance of the updated policy.</p>
+    <h2 data-i18n="privacy.changes.title">Changes to This Policy</h2>
+    <p data-i18n="privacy.changes.desc">If we make material changes to this policy, we will update the date at the top of this page. Continued use of the app after any changes constitutes acceptance of the updated policy.</p>
 
-    <h2>Contact</h2>
-    <p>If you have questions about this privacy policy, please reach out via the <a href="support.html">Support</a> page.</p>
+    <h2 data-i18n="privacy.contact.title">Contact</h2>
+    <p data-i18n-html="privacy.contact.desc">If you have questions about this privacy policy, please reach out via the <a href="support.html">Support</a> page.</p>
 
   </div>
 </div>
@@ -118,15 +131,15 @@
         HAHome
       </div>
       <div class="footer-links">
-        <a href="index.html#features">Features</a>
-        <a href="index.html#domains">Control</a>
-        <a href="index.html#how">Setup</a>
-        <a href="index.html#pro">Pro</a>
-        <a href="index.html#faq">FAQ</a>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="support.html">Support</a>
+        <a href="index.html#features" data-i18n="nav.features">Features</a>
+        <a href="index.html#domains" data-i18n="nav.control">Control</a>
+        <a href="index.html#how" data-i18n="nav.setup">Setup</a>
+        <a href="index.html#pro" data-i18n="nav.pro">Pro</a>
+        <a href="index.html#faq" data-i18n="nav.faq">FAQ</a>
+        <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+        <a href="support.html" data-i18n="footer.support">Support</a>
       </div>
-      <p class="footer-note">
+      <p class="footer-note" data-i18n-html="footer.note">
         HAHome is an independent app and is not affiliated with the Home Assistant project or Nabu Casa.<br>
         &copy; 2026 HAHome. All rights reserved.
       </p>
@@ -134,6 +147,7 @@
   </div>
 </footer>
 
+<script src="i18n.js"></script>
 <script src="scripts.js"></script>
 </body>
 </html>
