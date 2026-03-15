@@ -31,6 +31,15 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+// Close language dropdown on outside click
+document.addEventListener('click', function (e) {
+  const picker = document.querySelector('.lang-picker');
+  const dropdown = document.querySelector('.lang-dropdown');
+  if (picker && dropdown && !picker.contains(e.target)) {
+    dropdown.classList.remove('open');
+  }
+});
+
 function toggleFaq(btn) {
   const answer = btn.nextElementSibling;
   const isOpen = btn.classList.contains('open');
