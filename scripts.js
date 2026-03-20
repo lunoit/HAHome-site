@@ -10,24 +10,148 @@ function closeMenu() {
   document.getElementById('nav-hamburger').classList.remove('open');
 }
 
-// Drag-to-scroll for the screenshots strip
-document.addEventListener('DOMContentLoaded', function () {
-  const slider = document.querySelector('.screenshots-scroll');
-  if (!slider) return;
-  let isDown = false, startX, scrollLeft;
-  slider.addEventListener('mousedown', function (e) {
-    isDown = true;
-    slider.style.cursor = 'grabbing';
-    startX = e.pageX - slider.offsetLeft;
-    scrollLeft = slider.scrollLeft;
+// Action carousel (See It In Action)
+let actionSlide = 0;
+const actionTotal = 8;
+
+function moveActionSlide(dir) {
+  goToActionSlide((actionSlide + dir + actionTotal) % actionTotal);
+}
+
+function goToActionSlide(idx) {
+  actionSlide = idx;
+  var track = document.getElementById('action-track');
+  if (track) track.style.transform = 'translateX(-' + (idx * 100) + '%)';
+  document.querySelectorAll('.action-dot').forEach(function (d, i) {
+    d.classList.toggle('active', i === idx);
   });
-  slider.addEventListener('mouseleave', function () { isDown = false; slider.style.cursor = ''; });
-  slider.addEventListener('mouseup',    function () { isDown = false; slider.style.cursor = ''; });
-  slider.addEventListener('mousemove',  function (e) {
-    if (!isDown) return;
-    e.preventDefault();
-    const x = e.pageX - slider.offsetLeft;
-    slider.scrollLeft = scrollLeft - (x - startX) * 1.5;
+}
+
+// Touch swipe for action carousel
+document.addEventListener('DOMContentLoaded', function () {
+  var carousel = document.getElementById('action-carousel');
+  if (!carousel) return;
+  var startX = 0, diffX = 0;
+  carousel.addEventListener('touchstart', function (e) { startX = e.touches[0].clientX; diffX = 0; }, { passive: true });
+  carousel.addEventListener('touchmove', function (e) { diffX = e.touches[0].clientX - startX; }, { passive: true });
+  carousel.addEventListener('touchend', function () {
+    if (Math.abs(diffX) > 50) moveActionSlide(diffX < 0 ? 1 : -1);
+  });
+});
+
+// Config carousel (Configuration)
+let configSlide = 0;
+const configTotal = 4;
+
+function moveConfigSlide(dir) {
+  goToConfigSlide((configSlide + dir + configTotal) % configTotal);
+}
+
+function goToConfigSlide(idx) {
+  configSlide = idx;
+  var track = document.getElementById('config-track');
+  if (track) track.style.transform = 'translateX(-' + (idx * 100) + '%)';
+  document.querySelectorAll('#config-dots .action-dot').forEach(function (d, i) {
+    d.classList.toggle('active', i === idx);
+  });
+}
+
+// Touch swipe for config carousel
+document.addEventListener('DOMContentLoaded', function () {
+  var carousel = document.getElementById('config-carousel');
+  if (!carousel) return;
+  var startX = 0, diffX = 0;
+  carousel.addEventListener('touchstart', function (e) { startX = e.touches[0].clientX; diffX = 0; }, { passive: true });
+  carousel.addEventListener('touchmove', function (e) { diffX = e.touches[0].clientX - startX; }, { passive: true });
+  carousel.addEventListener('touchend', function () {
+    if (Math.abs(diffX) > 50) moveConfigSlide(diffX < 0 ? 1 : -1);
+  });
+});
+
+// Music Assistant carousel
+let maSlide = 0;
+const maTotal = 2;
+
+function moveMaSlide(dir) {
+  goToMaSlide((maSlide + dir + maTotal) % maTotal);
+}
+
+function goToMaSlide(idx) {
+  maSlide = idx;
+  var track = document.getElementById('ma-track');
+  if (track) track.style.transform = 'translateX(-' + (idx * 100) + '%)';
+  document.querySelectorAll('#ma-dots .action-dot').forEach(function (d, i) {
+    d.classList.toggle('active', i === idx);
+  });
+}
+
+// Touch swipe for Music Assistant carousel
+document.addEventListener('DOMContentLoaded', function () {
+  var carousel = document.getElementById('ma-carousel');
+  if (!carousel) return;
+  var startX = 0, diffX = 0;
+  carousel.addEventListener('touchstart', function (e) { startX = e.touches[0].clientX; diffX = 0; }, { passive: true });
+  carousel.addEventListener('touchmove', function (e) { diffX = e.touches[0].clientX - startX; }, { passive: true });
+  carousel.addEventListener('touchend', function () {
+    if (Math.abs(diffX) > 50) moveMaSlide(diffX < 0 ? 1 : -1);
+  });
+});
+
+// Rooms carousel (Room Details)
+let roomsSlide = 0;
+const roomsTotal = 4;
+
+function moveRoomsSlide(dir) {
+  goToRoomsSlide((roomsSlide + dir + roomsTotal) % roomsTotal);
+}
+
+function goToRoomsSlide(idx) {
+  roomsSlide = idx;
+  var track = document.getElementById('rooms-track');
+  if (track) track.style.transform = 'translateX(-' + (idx * 100) + '%)';
+  document.querySelectorAll('#rooms-dots .action-dot').forEach(function (d, i) {
+    d.classList.toggle('active', i === idx);
+  });
+}
+
+// Touch swipe for rooms carousel
+document.addEventListener('DOMContentLoaded', function () {
+  var carousel = document.getElementById('rooms-carousel');
+  if (!carousel) return;
+  var startX = 0, diffX = 0;
+  carousel.addEventListener('touchstart', function (e) { startX = e.touches[0].clientX; diffX = 0; }, { passive: true });
+  carousel.addEventListener('touchmove', function (e) { diffX = e.touches[0].clientX - startX; }, { passive: true });
+  carousel.addEventListener('touchend', function () {
+    if (Math.abs(diffX) > 50) moveRoomsSlide(diffX < 0 ? 1 : -1);
+  });
+});
+
+// Energy carousel
+let energySlide = 0;
+const energyTotal = 5;
+
+function moveEnergySlide(dir) {
+  goToEnergySlide((energySlide + dir + energyTotal) % energyTotal);
+}
+
+function goToEnergySlide(idx) {
+  energySlide = idx;
+  const track = document.getElementById('energy-track');
+  if (track) track.style.transform = 'translateX(-' + (idx * 100) + '%)';
+  document.querySelectorAll('.energy-dot').forEach(function (d, i) {
+    d.classList.toggle('active', i === idx);
+  });
+}
+
+// Touch swipe for energy carousel
+document.addEventListener('DOMContentLoaded', function () {
+  var carousel = document.getElementById('energy-carousel');
+  if (!carousel) return;
+  var startX = 0, diffX = 0;
+  carousel.addEventListener('touchstart', function (e) { startX = e.touches[0].clientX; diffX = 0; }, { passive: true });
+  carousel.addEventListener('touchmove', function (e) { diffX = e.touches[0].clientX - startX; }, { passive: true });
+  carousel.addEventListener('touchend', function () {
+    if (Math.abs(diffX) > 50) moveEnergySlide(diffX < 0 ? 1 : -1);
   });
 });
 

@@ -91,13 +91,13 @@
     <!-- Phone Mockups -->
     <div class="hero-mockup">
       <div class="phone-frame side">
-        <img src="screenshots/IMG_1103.jpeg" alt="HAHome lights screen" />
+        <img src="screenshots/main_left.jpeg" alt="HAHome lights screen" />
       </div>
       <div class="phone-frame center">
-        <img src="screenshots/IMG_1104.jpeg" alt="HAHome home dashboard" />
+        <img src="screenshots/main_middle.jpeg" alt="HAHome home dashboard" />
       </div>
       <div class="phone-frame side">
-        <img src="screenshots/IMG_1105.jpeg" alt="HAHome climate screen" />
+        <img src="screenshots/main_right.jpeg" alt="HAHome climate screen" />
       </div>
     </div>
   </div>
@@ -172,28 +172,317 @@
   </div>
 </section>
 
-<!-- ── Screenshots ────────────────────────────────────────────── -->
+<!-- ── See It In Action ────────────────────────────────────────── -->
 <section id="screenshots">
   <div class="container">
-    <div class="screenshots-header">
-      <span class="section-label" data-i18n="screenshots.label">Screenshots</span>
-      <h2 data-i18n="screenshots.title">See it in action.</h2>
-      <p class="subtitle" data-i18n="screenshots.subtitle">A glimpse of what's waiting for you.</p>
+    <div class="action-header">
+      <span class="section-label" data-i18n="action.label">See It In Action</span>
+      <h2 data-i18n="action.title">See it in action.</h2>
+      <p class="subtitle" data-i18n="action.subtitle">A glimpse of what's waiting for you.</p>
     </div>
+
+    <div class="action-carousel" id="action-carousel">
+      <div class="action-carousel-track" id="action-track">
+
+        <div class="action-slide">
+          <div class="action-slide-phone">
+            <img src="screenshots/SeeItInAction/Home.jpeg" alt="Home dashboard" />
+          </div>
+          <div class="action-slide-caption">
+            <h3 data-i18n="action.home.title">Home Dashboard</h3>
+            <p data-i18n="action.home.desc">Your entire smart home at a glance — weather, favourites, live camera feeds, and room tiles with device status summaries.</p>
+          </div>
+        </div>
+
+        <div class="action-slide">
+          <div class="action-slide-phone">
+            <img src="screenshots/SeeItInAction/actionsheets/light_action.jpeg" alt="Light controls" />
+          </div>
+          <div class="action-slide-caption">
+            <h3 data-i18n="action.light.title">Light Control</h3>
+            <p data-i18n="action.light.desc">Drag the brightness slider and pick a colour temperature preset. Smooth, responsive control for every light in your home.</p>
+          </div>
+        </div>
+
+        <div class="action-slide">
+          <div class="action-slide-phone">
+            <img src="screenshots/SeeItInAction/actionsheets/thermostat_action.jpeg" alt="Thermostat controls" />
+          </div>
+          <div class="action-slide-caption">
+            <h3 data-i18n="action.climate.title">Climate Control</h3>
+            <p data-i18n="action.climate.desc">An interactive temperature dial with HVAC mode, preset, fan speed and swing controls — all on one screen.</p>
+          </div>
+        </div>
+
+        <div class="action-slide">
+          <div class="action-slide-phone">
+            <img src="screenshots/SeeItInAction/actionsheets/Blinds_action.jpeg" alt="Blinds controls" />
+          </div>
+          <div class="action-slide-caption">
+            <h3 data-i18n="action.blinds.title">Blinds & Covers</h3>
+            <p data-i18n="action.blinds.desc">Set the exact position with a slider, or tap Open, Stop and Close for quick control of blinds, shutters and curtains.</p>
+          </div>
+        </div>
+
+        <div class="action-slide">
+          <div class="action-slide-phone">
+            <img src="screenshots/SeeItInAction/actionsheets/mediaplayer_action.jpeg" alt="Media player controls" />
+          </div>
+          <div class="action-slide-caption">
+            <h3 data-i18n="action.media.title">Media Player</h3>
+            <p data-i18n="action.media.desc">Album art, a circular volume dial, playback controls and source selection — a full remote for your TV and speakers.</p>
+          </div>
+        </div>
+
+        <div class="action-slide">
+          <div class="action-slide-phone">
+            <img src="screenshots/SeeItInAction/actionsheets/Fan_action.jpeg" alt="Fan controls" />
+          </div>
+          <div class="action-slide-caption">
+            <h3 data-i18n="action.fan.title">Fan Control</h3>
+            <p data-i18n="action.fan.desc">Adjust speed with a slider, pick a preset mode and toggle oscillation — everything you need for fans and air purifiers.</p>
+          </div>
+        </div>
+
+        <div class="action-slide">
+          <div class="action-slide-phone">
+            <img src="screenshots/SeeItInAction/actionsheets/Alarm_action.jpeg" alt="Alarm panel" />
+          </div>
+          <div class="action-slide-caption">
+            <h3 data-i18n="action.alarm.title">Alarm Panel</h3>
+            <p data-i18n="action.alarm.desc">Arm and disarm your home security with one tap. Supports Away, Home, Night and Vacation modes.</p>
+          </div>
+        </div>
+
+        <div class="action-slide">
+          <div class="action-slide-phone">
+            <img src="screenshots/SeeItInAction/actionsheets/Person_detail.jpeg" alt="Person tracking" />
+          </div>
+          <div class="action-slide-caption">
+            <h3 data-i18n="action.person.title">Person Tracking</h3>
+            <p data-i18n="action.person.desc">See where household members are on a live map powered by Apple Maps — right from your home dashboard.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="action-carousel-nav">
+      <button class="action-carousel-btn" onclick="moveActionSlide(-1)" aria-label="Previous slide">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <div class="action-dots" id="action-dots">
+        <button class="action-dot active" onclick="goToActionSlide(0)" aria-label="Slide 1"></button>
+        <button class="action-dot" onclick="goToActionSlide(1)" aria-label="Slide 2"></button>
+        <button class="action-dot" onclick="goToActionSlide(2)" aria-label="Slide 3"></button>
+        <button class="action-dot" onclick="goToActionSlide(3)" aria-label="Slide 4"></button>
+        <button class="action-dot" onclick="goToActionSlide(4)" aria-label="Slide 5"></button>
+        <button class="action-dot" onclick="goToActionSlide(5)" aria-label="Slide 6"></button>
+        <button class="action-dot" onclick="goToActionSlide(6)" aria-label="Slide 7"></button>
+        <button class="action-dot" onclick="goToActionSlide(7)" aria-label="Slide 8"></button>
+      </div>
+      <button class="action-carousel-btn" onclick="moveActionSlide(1)" aria-label="Next slide">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+    </div>
+
   </div>
-  <div class="screenshots-scroll">
-    <div class="screenshots-track">
-      <div class="screenshot-frame"><img src="screenshots/IMG_1103.jpeg" alt="Screenshot 1" /></div>
-      <div class="screenshot-frame"><img src="screenshots/IMG_1104.jpeg" alt="Screenshot 2" /></div>
-      <div class="screenshot-frame"><img src="screenshots/IMG_1105.jpeg" alt="Screenshot 3" /></div>
-      <div class="screenshot-frame"><img src="screenshots/IMG_1106.jpeg" alt="Screenshot 4" /></div>
-      <div class="screenshot-frame"><img src="screenshots/IMG_1107.jpeg" alt="Screenshot 5" /></div>
-      <div class="screenshot-frame"><img src="screenshots/IMG_1108.jpeg" alt="Screenshot 6" /></div>
-      <div class="screenshot-frame"><img src="screenshots/IMG_1109.jpeg" alt="Screenshot 7" /></div>
-      <div class="screenshot-frame"><img src="screenshots/IMG_1110.jpeg" alt="Screenshot 8" /></div>
-      <div class="screenshot-frame"><img src="screenshots/IMG_1111.jpeg" alt="Screenshot 9" /></div>
-      <div class="screenshot-frame"><img src="screenshots/IMG_1112.jpeg" alt="Screenshot 10" /></div>
+</section>
+
+<!-- ── Configuration ─────────────────────────────────────────────── -->
+<section id="configuration">
+  <div class="container">
+    <div class="config-header">
+      <span class="section-label" data-i18n="config.label">Configuration</span>
+      <h2 data-i18n="config.title">Set up your way.</h2>
+      <p class="subtitle" data-i18n="config.subtitle">Pick your entities, choose a theme, and fine-tune every detail before you start controlling.</p>
     </div>
+
+    <div class="action-carousel" id="config-carousel">
+      <div class="action-carousel-track" id="config-track">
+
+        <div class="action-slide">
+          <div class="action-slide-phone">
+            <img src="screenshots/SeeItInAction/config/entity_selection.jpeg" alt="Entity selection" />
+          </div>
+          <div class="action-slide-caption">
+            <h3 data-i18n="config.entities.title">Manage Entities</h3>
+            <p data-i18n="config.entities.desc">Tap a category to pick exactly which entities you want to manage. Lights, climate, switches, covers, media, security, energy and automations — all in one place.</p>
+          </div>
+        </div>
+
+        <div class="action-slide">
+          <div class="action-slide-phone">
+            <img src="screenshots/SeeItInAction/config/lights_selection.jpeg" alt="Light entity selection" />
+          </div>
+          <div class="action-slide-caption">
+            <h3 data-i18n="config.lights.title">Select Lights</h3>
+            <p data-i18n="config.lights.desc">Browse your lights grouped by room, see their current state and custom icon, and check the ones you want. A search bar at the bottom makes it easy to find any light.</p>
+          </div>
+        </div>
+
+        <div class="action-slide">
+          <div class="action-slide-phone">
+            <img src="screenshots/SeeItInAction/config/themes_selection.jpeg" alt="Theme picker" />
+          </div>
+          <div class="action-slide-caption">
+            <h3 data-i18n="config.themes.title">Themes</h3>
+            <p data-i18n="config.themes.desc">Choose from 6 free and 7 Pro themes. Each theme transforms the entire app with a unique colour palette — from Midnight to Aurora to Peach Mist.</p>
+          </div>
+        </div>
+
+        <div class="action-slide">
+          <div class="action-slide-phone">
+            <img src="screenshots/SeeItInAction/config/energy_configuraion.jpeg" alt="Energy configuration" />
+          </div>
+          <div class="action-slide-caption">
+            <h3 data-i18n="config.energy.title">Energy Configuration</h3>
+            <p data-i18n="config.energy.desc">Toggle individual energy sections on or off, connect a live power sensor, and choose exactly which charts appear on your energy dashboard.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="action-carousel-nav">
+      <button class="action-carousel-btn" onclick="moveConfigSlide(-1)" aria-label="Previous slide">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <div class="action-dots" id="config-dots">
+        <button class="action-dot active" onclick="goToConfigSlide(0)" aria-label="Slide 1"></button>
+        <button class="action-dot" onclick="goToConfigSlide(1)" aria-label="Slide 2"></button>
+        <button class="action-dot" onclick="goToConfigSlide(2)" aria-label="Slide 3"></button>
+        <button class="action-dot" onclick="goToConfigSlide(3)" aria-label="Slide 4"></button>
+      </div>
+      <button class="action-carousel-btn" onclick="moveConfigSlide(1)" aria-label="Next slide">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── Music Assistant ───────────────────────────────────────────── -->
+<section id="music-assistant">
+  <div class="container">
+    <div class="ma-header">
+      <span class="section-label" data-i18n="ma.label">Music Assistant</span>
+      <h2 data-i18n="ma.title">Your music, one tap away.</h2>
+      <p class="subtitle" data-i18n="ma.subtitle">HAHome integrates with Music Assistant so you can browse and play your favourite radio stations and playlists directly from any media player.</p>
+    </div>
+
+    <div class="action-carousel" id="ma-carousel">
+      <div class="action-carousel-track" id="ma-track">
+
+        <div class="action-slide">
+          <div class="action-slide-phone">
+            <img src="screenshots/SeeItInAction/musicassistant/musicassistant_radio.jpeg" alt="Music Assistant radio stations" />
+          </div>
+          <div class="action-slide-caption">
+            <h3 data-i18n="ma.radio.title">Radio Stations</h3>
+            <p data-i18n="ma.radio.desc">Browse your favourite radio stations with artwork and tap play to start streaming instantly to any connected speaker or TV.</p>
+          </div>
+        </div>
+
+        <div class="action-slide">
+          <div class="action-slide-phone">
+            <img src="screenshots/SeeItInAction/musicassistant/musicassistant_playlists.jpeg" alt="Music Assistant playlists" />
+          </div>
+          <div class="action-slide-caption">
+            <h3 data-i18n="ma.playlists.title">Playlists</h3>
+            <p data-i18n="ma.playlists.desc">Switch to the Playlists tab to see your saved playlists with cover art. Tap any playlist to start playing it on the selected media player.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="action-carousel-nav">
+      <button class="action-carousel-btn" onclick="moveMaSlide(-1)" aria-label="Previous slide">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <div class="action-dots" id="ma-dots">
+        <button class="action-dot active" onclick="goToMaSlide(0)" aria-label="Slide 1"></button>
+        <button class="action-dot" onclick="goToMaSlide(1)" aria-label="Slide 2"></button>
+      </div>
+      <button class="action-carousel-btn" onclick="moveMaSlide(1)" aria-label="Next slide">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── Room Details ──────────────────────────────────────────────── -->
+<section id="room-details">
+  <div class="container">
+    <div class="rooms-header">
+      <span class="section-label" data-i18n="rooms.label">Room Details</span>
+      <h2 data-i18n="rooms.title">Every room, your way.</h2>
+      <p class="subtitle" data-i18n="rooms.subtitle">Give each room its own personality with a custom wallpaper — pick from built-in gradients, room photos, or your own image from your photo library.</p>
+    </div>
+
+    <div class="action-carousel" id="rooms-carousel">
+      <div class="action-carousel-track" id="rooms-track">
+
+        <div class="action-slide">
+          <div class="action-slide-phone">
+            <img src="screenshots/SeeItInAction/roomdetails/kitchen_detail.jpeg" alt="Kitchen room detail" />
+          </div>
+          <div class="action-slide-caption">
+            <h3 data-i18n="rooms.kitchen.title">Kitchen</h3>
+            <p data-i18n="rooms.kitchen.desc">A kitchen photo wallpaper with lights, switches and media players layered on top — control everything without leaving the room view.</p>
+          </div>
+        </div>
+
+        <div class="action-slide">
+          <div class="action-slide-phone">
+            <img src="screenshots/SeeItInAction/roomdetails/bedroom_detail.jpeg" alt="Bedroom room detail" />
+          </div>
+          <div class="action-slide-caption">
+            <h3 data-i18n="rooms.bedroom.title">Bedroom</h3>
+            <p data-i18n="rooms.bedroom.desc">A cosy bedroom background with ceiling light, curtains and thermostat at your fingertips — plus a sensor summary at the top.</p>
+          </div>
+        </div>
+
+        <div class="action-slide">
+          <div class="action-slide-phone">
+            <img src="screenshots/SeeItInAction/roomdetails/office_detail.jpeg" alt="Office room detail" />
+          </div>
+          <div class="action-slide-caption">
+            <h3 data-i18n="rooms.office.title">Office</h3>
+            <p data-i18n="rooms.office.desc">A clean office wallpaper with desk light and monitor switch. Each room shows only the entities that belong there.</p>
+          </div>
+        </div>
+
+        <div class="action-slide">
+          <div class="action-slide-phone">
+            <img src="screenshots/SeeItInAction/roomdetails/room_detail_selection.jpeg" alt="Room background picker" />
+          </div>
+          <div class="action-slide-caption">
+            <h3 data-i18n="rooms.picker.title">Background Picker</h3>
+            <p data-i18n="rooms.picker.desc">Choose from colour gradients, built-in room photos, or upload your own image to make every room feel unique and personal.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="action-carousel-nav">
+      <button class="action-carousel-btn" onclick="moveRoomsSlide(-1)" aria-label="Previous slide">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <div class="action-dots" id="rooms-dots">
+        <button class="action-dot active" onclick="goToRoomsSlide(0)" aria-label="Slide 1"></button>
+        <button class="action-dot" onclick="goToRoomsSlide(1)" aria-label="Slide 2"></button>
+        <button class="action-dot" onclick="goToRoomsSlide(2)" aria-label="Slide 3"></button>
+        <button class="action-dot" onclick="goToRoomsSlide(3)" aria-label="Slide 4"></button>
+      </div>
+      <button class="action-carousel-btn" onclick="moveRoomsSlide(1)" aria-label="Next slide">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+    </div>
+
   </div>
 </section>
 
@@ -229,7 +518,7 @@
       <div class="domain-card card">
         <div class="domain-icon" style="background:rgba(129,140,248,0.12);">📺</div>
         <h3 data-i18n="domains.media.title">Media Players</h3>
-        <p data-i18n="domains.media.desc">Playback, volume, source selection and seeking. Full remote control for your TV and speakers.</p>
+        <p data-i18n="domains.media.desc">Playback, volume, source selection and seeking. Full remote control for your TV and speakers. Music Assistant integration lets you browse and play favourite radio stations and playlists.</p>
       </div>
 
       <div class="domain-card card">
@@ -263,6 +552,80 @@
       </div>
 
     </div>
+  </div>
+</section>
+
+<!-- ── Energy Showcase ─────────────────────────────────────────── -->
+<section id="energy-showcase">
+  <div class="container">
+    <div class="energy-showcase-header">
+      <span class="section-label" data-i18n="energy.label">Energy Dashboard</span>
+      <h2 data-i18n="energy.title">Your home's energy, visualised.</h2>
+      <p class="subtitle" data-i18n="energy.subtitle">Track every watt, cubic metre and drop — all in one place. Navigate between days to compare usage over time.</p>
+    </div>
+
+    <div class="energy-carousel" id="energy-carousel">
+      <div class="energy-carousel-track" id="energy-track">
+
+        <div class="energy-slide">
+          <img src="screenshots/energy/energy_distribution.jpeg" alt="Energy distribution flow diagram" />
+          <div class="energy-slide-caption">
+            <h3 data-i18n="energy.dist.title">Energy Distribution</h3>
+            <p data-i18n="energy.dist.desc">A live flow diagram showing how energy moves through your home — from solar panels and the grid to your house, gas and water. See exactly where your energy comes from and goes.</p>
+          </div>
+        </div>
+
+        <div class="energy-slide">
+          <img src="screenshots/energy/energy_usage.jpeg" alt="Energy usage chart" />
+          <div class="energy-slide-caption">
+            <h3 data-i18n="energy.usage.title">Energy Usage</h3>
+            <p data-i18n="energy.usage.desc">Hourly bar chart breaking down your total electricity consumption. See grid consumption, solar production and return to grid side by side with the daily total in kWh.</p>
+          </div>
+        </div>
+
+        <div class="energy-slide">
+          <img src="screenshots/energy/solar_production.jpeg" alt="Solar production chart" />
+          <div class="energy-slide-caption">
+            <h3 data-i18n="energy.solar.title">Solar Production</h3>
+            <p data-i18n="energy.solar.desc">Track your solar panel output hour by hour. See the daily production total and identify peak generation times at a glance.</p>
+          </div>
+        </div>
+
+        <div class="energy-slide">
+          <img src="screenshots/energy/gas_consumption.jpeg" alt="Gas consumption chart" />
+          <div class="energy-slide-caption">
+            <h3 data-i18n="energy.gas.title">Gas Consumption</h3>
+            <p data-i18n="energy.gas.desc">Monitor your gas usage in cubic metres with an hourly breakdown. Spot heating patterns and track daily consumption totals.</p>
+          </div>
+        </div>
+
+        <div class="energy-slide">
+          <img src="screenshots/energy/water_consumption.jpeg" alt="Water consumption chart" />
+          <div class="energy-slide-caption">
+            <h3 data-i18n="energy.water.title">Water Consumption</h3>
+            <p data-i18n="energy.water.desc">Keep tabs on water usage throughout the day. Identify peak usage moments and track your daily total in cubic metres.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="energy-carousel-nav">
+      <button class="energy-carousel-btn" onclick="moveEnergySlide(-1)" aria-label="Previous slide">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <div class="energy-dots" id="energy-dots">
+        <button class="energy-dot active" onclick="goToEnergySlide(0)" aria-label="Slide 1"></button>
+        <button class="energy-dot" onclick="goToEnergySlide(1)" aria-label="Slide 2"></button>
+        <button class="energy-dot" onclick="goToEnergySlide(2)" aria-label="Slide 3"></button>
+        <button class="energy-dot" onclick="goToEnergySlide(3)" aria-label="Slide 4"></button>
+        <button class="energy-dot" onclick="goToEnergySlide(4)" aria-label="Slide 5"></button>
+      </div>
+      <button class="energy-carousel-btn" onclick="moveEnergySlide(1)" aria-label="Next slide">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+    </div>
+
   </div>
 </section>
 
