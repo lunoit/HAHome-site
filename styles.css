@@ -1196,6 +1196,8 @@ footer {
 .intelligence-card {
   padding: 28px;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .intelligence-icon {
@@ -1238,6 +1240,70 @@ footer {
   font-size: 15px;
   color: var(--muted);
   line-height: 1.6;
+}
+
+/* ── Intelligence card carousels ─────────────────────────── */
+.intel-carousel {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  margin-top: 18px;
+}
+
+.intel-carousel-placeholder {
+  display: none;
+}
+
+.intel-carousel-track {
+  position: relative;
+  transition: height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+.intel-carousel-slide {
+  width: 100%;
+  transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.intel-carousel-slide.active {
+  opacity: 1;
+  position: relative;
+  pointer-events: auto;
+}
+
+.intel-carousel-slide img {
+  width: 100%;
+  display: block;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+}
+
+.intel-carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.intel-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.2);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.intel-dot.active {
+  background: var(--accent);
+  transform: scale(1.25);
 }
 
 .intelligence-note {

@@ -155,6 +155,55 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+// Intelligence card carousels
+var intelSlides = {};
+
+function goToIntelSlide(id, idx) {
+  intelSlides[id] = idx;
+  var carousel = document.querySelector('[data-intel-carousel="' + id + '"]');
+  if (!carousel) return;
+  var slides = carousel.querySelectorAll('.intel-carousel-slide');
+  slides.forEach(function (s, i) { s.classList.toggle('active', i === idx); });
+  var track = carousel.querySelector('.intel-carousel-track');
+  if (track && slides[idx]) track.style.height = slides[idx].offsetHeight + 'px';
+  carousel.querySelectorAll('.intel-dot').forEach(function (d, i) {
+    d.classList.toggle('active', i === idx);
+  });
+}
+
+// Init + touch swipe for intelligence carousels
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('.intel-carousel:not(.intel-carousel-placeholder)').forEach(function (carousel) {
+    var id = carousel.getAttribute('data-intel-carousel');
+    var slides = carousel.querySelectorAll('.intel-carousel-slide');
+    var total = slides.length;
+    intelSlides[id] = 0;
+    // Set first slide active and init height once images load
+    slides[0].classList.add('active');
+    var firstImg = slides[0].querySelector('img');
+    if (firstImg) {
+      var setHeight = function () {
+        var track = carousel.querySelector('.intel-carousel-track');
+        if (track) track.style.height = slides[0].offsetHeight + 'px';
+      };
+      if (firstImg.complete) setHeight();
+      else firstImg.addEventListener('load', setHeight);
+    }
+    // Touch swipe
+    var startX = 0, diffX = 0;
+    carousel.addEventListener('touchstart', function (e) { startX = e.touches[0].clientX; diffX = 0; }, { passive: true });
+    carousel.addEventListener('touchmove', function (e) { diffX = e.touches[0].clientX - startX; }, { passive: true });
+    carousel.addEventListener('touchend', function () {
+      if (Math.abs(diffX) > 50) {
+        var dir = diffX < 0 ? 1 : -1;
+        var cur = intelSlides[id] || 0;
+        var next = (cur + dir + total) % total;
+        goToIntelSlide(id, next);
+      }
+    });
+  });
+});
+
 // Close language dropdown on outside click
 document.addEventListener('click', function (e) {
   const picker = document.querySelector('.lang-picker');
