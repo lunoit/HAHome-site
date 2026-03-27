@@ -135,6 +135,12 @@ const translations = {
     "energy.gas.desc": "Monitor your gas usage in cubic metres with an hourly breakdown. Spot heating patterns and track daily consumption totals.",
     "energy.water.title": "Water Consumption",
     "energy.water.desc": "Keep tabs on water usage throughout the day. Identify peak usage moments and track your daily total in cubic metres.",
+    "energy.livesensors.title": "Live Sensors",
+    "energy.livesensors.desc": "See your current grid consumption and solar production side by side with real-time live indicators. Instant insight into what your home is using and generating right now.",
+    "energy.liveusage.title": "Usage Sensor Detail",
+    "energy.liveusage.desc": "Dive into your P1 meter with a live wattage reading, a 24-hour trend chart and min, average and max statistics at a glance.",
+    "energy.livesolar.title": "Solar Sensor Detail",
+    "energy.livesolar.desc": "Monitor your solar inverter output live with a real-time wattage display, a 24-hour production curve and daily min, average and max values.",
 
     // Apple Intelligence
     "intelligence.label": "Apple Intelligence",
@@ -412,6 +418,12 @@ const translations = {
     "energy.gas.desc": "Bewaak je gasverbruik in kubieke meters met een uitsplitsing per uur. Herken verwarmingspatronen en volg dagelijkse verbruikstotalen.",
     "energy.water.title": "Waterverbruik",
     "energy.water.desc": "Houd je waterverbruik bij gedurende de dag. Identificeer piekmomenten en volg je dagelijks totaal in kubieke meters.",
+    "energy.livesensors.title": "Live sensoren",
+    "energy.livesensors.desc": "Bekijk je huidige netverbruik en zonneproductie naast elkaar met realtime live-indicatoren. Direct inzicht in wat je huis nu verbruikt en opwekt.",
+    "energy.liveusage.title": "Verbruikssensor detail",
+    "energy.liveusage.desc": "Duik in je P1-meter met een live wattage-uitlezing, een 24-uurs trendgrafiek en min, gemiddelde en max statistieken in één oogopslag.",
+    "energy.livesolar.title": "Zonnesensor detail",
+    "energy.livesolar.desc": "Monitor de output van je zonne-omvormer live met een realtime wattage-weergave, een 24-uurs productiecurve en dagelijkse min, gemiddelde en max waarden.",
 
     // Apple Intelligence
     "intelligence.label": "Apple Intelligence",
@@ -683,6 +695,12 @@ const translations = {
     "energy.gas.desc": "Surveillez votre consommation de gaz en mètres cubes avec un détail horaire. Repérez les schémas de chauffage et suivez les totaux de consommation journaliers.",
     "energy.water.title": "Consommation d'eau",
     "energy.water.desc": "Gardez un œil sur votre consommation d'eau tout au long de la journée. Identifiez les pics de consommation et suivez votre total journalier en mètres cubes.",
+    "energy.livesensors.title": "Capteurs en direct",
+    "energy.livesensors.desc": "Consultez votre consommation réseau et votre production solaire côte à côte avec des indicateurs en temps réel. Un aperçu instantané de ce que votre maison consomme et produit en ce moment.",
+    "energy.liveusage.title": "Détail du capteur de consommation",
+    "energy.liveusage.desc": "Plongez dans votre compteur P1 avec une lecture de puissance en direct, un graphique de tendance sur 24 heures et les statistiques min, moyenne et max en un coup d'œil.",
+    "energy.livesolar.title": "Détail du capteur solaire",
+    "energy.livesolar.desc": "Surveillez la production de votre onduleur solaire en direct avec un affichage de puissance en temps réel, une courbe de production sur 24 heures et les valeurs min, moyenne et max quotidiennes.",
 
     // Apple Intelligence
     "intelligence.label": "Apple Intelligence",
@@ -954,6 +972,12 @@ const translations = {
     "energy.gas.desc": "Überwache deinen Gasverbrauch in Kubikmetern mit stündlicher Aufschlüsselung. Erkenne Heizmuster und verfolge tägliche Verbrauchssummen.",
     "energy.water.title": "Wasserverbrauch",
     "energy.water.desc": "Behalte deinen Wasserverbrauch im Tagesverlauf im Blick. Erkenne Spitzenzeiten und verfolge dein Tagestotal in Kubikmetern.",
+    "energy.livesensors.title": "Live-Sensoren",
+    "energy.livesensors.desc": "Sieh deinen aktuellen Netzverbrauch und deine Solarproduktion nebeneinander mit Echtzeit-Live-Indikatoren. Sofortiger Einblick, was dein Zuhause gerade verbraucht und erzeugt.",
+    "energy.liveusage.title": "Verbrauchssensor-Detail",
+    "energy.liveusage.desc": "Tauche in deinen P1-Zähler ein mit einer Live-Wattanzeige, einem 24-Stunden-Trenddiagramm und Min-, Durchschnitts- und Max-Statistiken auf einen Blick.",
+    "energy.livesolar.title": "Solarsensor-Detail",
+    "energy.livesolar.desc": "Überwache die Leistung deines Wechselrichters live mit einer Echtzeit-Wattanzeige, einer 24-Stunden-Produktionskurve und täglichen Min-, Durchschnitts- und Max-Werten.",
 
     // Apple Intelligence
     "intelligence.label": "Apple Intelligence",
@@ -1225,6 +1249,12 @@ const translations = {
     "energy.gas.desc": "Monitoriza tu consumo de gas en metros cúbicos con un desglose por hora. Detecta patrones de calefacción y rastrea los totales de consumo diarios.",
     "energy.water.title": "Consumo de agua",
     "energy.water.desc": "Controla tu consumo de agua a lo largo del día. Identifica los momentos de mayor uso y rastrea tu total diario en metros cúbicos.",
+    "energy.livesensors.title": "Sensores en vivo",
+    "energy.livesensors.desc": "Consulta tu consumo de red y producción solar lado a lado con indicadores en tiempo real. Información instantánea sobre lo que tu hogar está consumiendo y generando ahora mismo.",
+    "energy.liveusage.title": "Detalle del sensor de consumo",
+    "energy.liveusage.desc": "Profundiza en tu medidor P1 con una lectura de potencia en vivo, un gráfico de tendencia de 24 horas y estadísticas de mín, media y máx de un vistazo.",
+    "energy.livesolar.title": "Detalle del sensor solar",
+    "energy.livesolar.desc": "Monitoriza la salida de tu inversor solar en vivo con una pantalla de potencia en tiempo real, una curva de producción de 24 horas y valores diarios de mín, media y máx.",
 
     // Apple Intelligence
     "intelligence.label": "Apple Intelligence",
@@ -1496,6 +1526,12 @@ const translations = {
     "energy.gas.desc": "Monitora il tuo consumo di gas in metri cubi con un dettaglio orario. Individua i pattern di riscaldamento e monitora i totali di consumo giornalieri.",
     "energy.water.title": "Consumo d'acqua",
     "energy.water.desc": "Tieni sotto controllo il consumo d'acqua durante la giornata. Identifica i momenti di picco e monitora il totale giornaliero in metri cubi.",
+    "energy.livesensors.title": "Sensori in tempo reale",
+    "energy.livesensors.desc": "Visualizza il consumo dalla rete e la produzione solare affiancati con indicatori live in tempo reale. Un quadro istantaneo di ciò che la tua casa sta consumando e producendo in questo momento.",
+    "energy.liveusage.title": "Dettaglio sensore di consumo",
+    "energy.liveusage.desc": "Approfondisci il tuo contatore P1 con una lettura di potenza in tempo reale, un grafico di tendenza a 24 ore e statistiche di min, media e max a colpo d'occhio.",
+    "energy.livesolar.title": "Dettaglio sensore solare",
+    "energy.livesolar.desc": "Monitora la produzione del tuo inverter solare in tempo reale con un display di potenza live, una curva di produzione a 24 ore e valori giornalieri di min, media e max.",
 
     // Apple Intelligence
     "intelligence.label": "Apple Intelligence",
@@ -1767,6 +1803,12 @@ const translations = {
     "energy.gas.desc": "Monitoriza o teu consumo de gás em metros cúbicos com um detalhe horário. Deteta padrões de aquecimento e acompanha os totais de consumo diários.",
     "energy.water.title": "Consumo de água",
     "energy.water.desc": "Acompanha o teu consumo de água ao longo do dia. Identifica os momentos de pico e acompanha o teu total diário em metros cúbicos.",
+    "energy.livesensors.title": "Sensores em tempo real",
+    "energy.livesensors.desc": "Consulta o teu consumo da rede e produção solar lado a lado com indicadores em tempo real. Informação instantânea sobre o que a tua casa está a consumir e a gerar neste momento.",
+    "energy.liveusage.title": "Detalhe do sensor de consumo",
+    "energy.liveusage.desc": "Explora o teu contador P1 com uma leitura de potência em tempo real, um gráfico de tendência de 24 horas e estatísticas de mín, média e máx num relance.",
+    "energy.livesolar.title": "Detalhe do sensor solar",
+    "energy.livesolar.desc": "Monitoriza a saída do teu inversor solar em tempo real com um display de potência live, uma curva de produção de 24 horas e valores diários de mín, média e máx.",
 
     // Apple Intelligence
     "intelligence.label": "Apple Intelligence",
@@ -2038,6 +2080,12 @@ const translations = {
     "energy.gas.desc": "Monitoruj zużycie gazu w metrach sześciennych z podziałem na godziny. Wykryj wzorce ogrzewania i śledź dzienne sumy zużycia.",
     "energy.water.title": "Zużycie wody",
     "energy.water.desc": "Śledź zużycie wody w ciągu dnia. Zidentyfikuj momenty szczytowego zużycia i śledź dzienny total w metrach sześciennych.",
+    "energy.livesensors.title": "Czujniki na żywo",
+    "energy.livesensors.desc": "Zobacz swoje bieżące zużycie z sieci i produkcję solarną obok siebie ze wskaźnikami w czasie rzeczywistym. Natychmiastowy wgląd w to, co Twój dom aktualnie zużywa i produkuje.",
+    "energy.liveusage.title": "Szczegóły czujnika zużycia",
+    "energy.liveusage.desc": "Zanurz się w swój licznik P1 z odczytem mocy na żywo, 24-godzinnym wykresem trendu oraz statystykami min, średniej i max na pierwszy rzut oka.",
+    "energy.livesolar.title": "Szczegóły czujnika solarnego",
+    "energy.livesolar.desc": "Monitoruj wydajność swojego falownika solarnego na żywo z wyświetlaczem mocy w czasie rzeczywistym, 24-godzinną krzywą produkcji oraz dziennymi wartościami min, średniej i max.",
 
     // Apple Intelligence
     "intelligence.label": "Apple Intelligence",
@@ -2309,6 +2357,12 @@ const translations = {
     "energy.gas.desc": "Övervaka din gasförbrukning i kubikmeter med timuppdelning. Upptäck uppvärmningsmönster och följ dagliga förbrukningssummor.",
     "energy.water.title": "Vattenförbrukning",
     "energy.water.desc": "Håll koll på vattenförbrukningen under dagen. Identifiera toppförbrukningstider och följ din dagliga summa i kubikmeter.",
+    "energy.livesensors.title": "Livesensorer",
+    "energy.livesensors.desc": "Se din aktuella nätförbrukning och solproduktion sida vid sida med realtidsindikatorer. Omedelbar insikt i vad ditt hem förbrukar och genererar just nu.",
+    "energy.liveusage.title": "Förbrukningssensor-detalj",
+    "energy.liveusage.desc": "Fördjupa dig i din P1-mätare med en live-wattavläsning, ett 24-timmars trenddiagram och min-, medel- och maxstatistik med en blick.",
+    "energy.livesolar.title": "Solsensor-detalj",
+    "energy.livesolar.desc": "Övervaka din växelriktares uteffekt live med en realtids-wattvisning, en 24-timmars produktionskurva och dagliga min-, medel- och maxvärden.",
 
     // Apple Intelligence
     "intelligence.label": "Apple Intelligence",

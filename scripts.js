@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // Energy carousel
 let energySlide = 0;
-const energyTotal = 5;
+const energyTotal = 8;
 
 function moveEnergySlide(dir) {
   goToEnergySlide((energySlide + dir + energyTotal) % energyTotal);
