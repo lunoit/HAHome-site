@@ -112,6 +112,7 @@ nav {
   display: flex;
   gap: 28px;
   list-style: none;
+  margin-left: 32px;
 }
 
 .nav-links a {

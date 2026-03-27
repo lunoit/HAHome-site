@@ -2,8 +2,9 @@ const translations = {
   en: {
     // Nav
     "nav.features": "Features",
-    "nav.control": "Control",
-    "nav.setup": "Setup",
+    "nav.screenshots": "Screenshots",
+    "nav.energy": "Energy",
+    "nav.intelligence": "Intelligence",
     "nav.pro": "Pro",
     "nav.faq": "FAQ",
     "nav.cta": "Get HAHome Pro",
@@ -289,8 +290,9 @@ const translations = {
 
   nl: {
     "nav.features": "Functies",
-    "nav.control": "Bediening",
-    "nav.setup": "Instellen",
+    "nav.screenshots": "Schermafbeeldingen",
+    "nav.energy": "Energie",
+    "nav.intelligence": "Intelligentie",
     "nav.pro": "Pro",
     "nav.faq": "FAQ",
     "nav.cta": "HAHome Pro kopen",
@@ -566,8 +568,9 @@ const translations = {
 
   fr: {
     "nav.features": "Fonctionnalités",
-    "nav.control": "Contrôle",
-    "nav.setup": "Installation",
+    "nav.screenshots": "Captures d'écran",
+    "nav.energy": "Énergie",
+    "nav.intelligence": "Intelligence",
     "nav.pro": "Pro",
     "nav.faq": "FAQ",
     "nav.cta": "Obtenir HAHome Pro",
@@ -843,8 +846,9 @@ const translations = {
 
   de: {
     "nav.features": "Funktionen",
-    "nav.control": "Steuerung",
-    "nav.setup": "Einrichtung",
+    "nav.screenshots": "Screenshots",
+    "nav.energy": "Energie",
+    "nav.intelligence": "Intelligenz",
     "nav.pro": "Pro",
     "nav.faq": "FAQ",
     "nav.cta": "HAHome Pro holen",
@@ -1120,8 +1124,9 @@ const translations = {
 
   es: {
     "nav.features": "Funciones",
-    "nav.control": "Control",
-    "nav.setup": "Configuración",
+    "nav.screenshots": "Capturas",
+    "nav.energy": "Energía",
+    "nav.intelligence": "Inteligencia",
     "nav.pro": "Pro",
     "nav.faq": "FAQ",
     "nav.cta": "Obtener HAHome Pro",
@@ -1397,8 +1402,9 @@ const translations = {
 
   it: {
     "nav.features": "Funzionalità",
-    "nav.control": "Controllo",
-    "nav.setup": "Configurazione",
+    "nav.screenshots": "Screenshot",
+    "nav.energy": "Energia",
+    "nav.intelligence": "Intelligenza",
     "nav.pro": "Pro",
     "nav.faq": "FAQ",
     "nav.cta": "Ottieni HAHome Pro",
@@ -1674,8 +1680,9 @@ const translations = {
 
   pt: {
     "nav.features": "Funcionalidades",
-    "nav.control": "Controlo",
-    "nav.setup": "Configuração",
+    "nav.screenshots": "Capturas",
+    "nav.energy": "Energia",
+    "nav.intelligence": "Inteligência",
     "nav.pro": "Pro",
     "nav.faq": "FAQ",
     "nav.cta": "Obter HAHome Pro",
@@ -1951,8 +1958,9 @@ const translations = {
 
   pl: {
     "nav.features": "Funkcje",
-    "nav.control": "Sterowanie",
-    "nav.setup": "Konfiguracja",
+    "nav.screenshots": "Zrzuty ekranu",
+    "nav.energy": "Energia",
+    "nav.intelligence": "Inteligencja",
     "nav.pro": "Pro",
     "nav.faq": "FAQ",
     "nav.cta": "Kup HAHome Pro",
@@ -2228,8 +2236,9 @@ const translations = {
 
   sv: {
     "nav.features": "Funktioner",
-    "nav.control": "Styrning",
-    "nav.setup": "Installation",
+    "nav.screenshots": "Skärmbilder",
+    "nav.energy": "Energi",
+    "nav.intelligence": "Intelligens",
     "nav.pro": "Pro",
     "nav.faq": "FAQ",
     "nav.cta": "Skaffa HAHome Pro",
