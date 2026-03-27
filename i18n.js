@@ -154,7 +154,7 @@ const translations = {
     "intelligence.conversation.title": "Ask About Your Home",
     "intelligence.conversation.desc": "Have a natural conversation with your home. Ask questions about device status, get room summaries, check sensor readings, or control lights, climate, covers, media and more — all through plain language.",
     "intelligence.automations.title": "Automation Explainer",
-    "intelligence.automations.desc": "Don\u0027t speak YAML? No problem. Apple Intelligence reads your Home Assistant automations and explains them in plain language — what triggers them, what conditions apply, what actions they perform, and even warns about edge cases.",
+    "intelligence.automations.desc": "Don\u0027t speak YAML? No problem. Apple Intelligence reads your Home Assistant automations and explains them in plain language — what triggers them, what conditions apply, what actions they perform, and even warns about edge cases. You can also request suggestions for improvement or analyse automations for errors, duplicate conditions, and more.",
     "intelligence.note": "Apple Intelligence requires a supported iPhone or Mac model with Apple Intelligence enabled. All processing happens on-device — your data never leaves your device.",
 
     // Accessibility
@@ -438,7 +438,7 @@ const translations = {
     "intelligence.conversation.title": "Vraag over je huis",
     "intelligence.conversation.desc": "Voer een natuurlijk gesprek met je huis. Stel vragen over apparaatstatus, krijg kamersamenvatting, controleer sensorwaarden, of bedien verlichting, klimaat, zonwering, media en meer — allemaal in gewone taal.",
     "intelligence.automations.title": "Automatisering-uitleg",
-    "intelligence.automations.desc": "Spreek je geen YAML? Geen probleem. Apple Intelligence leest je Home Assistant-automatiseringen en legt ze uit in gewone taal — wat ze activeert, welke voorwaarden gelden, welke acties ze uitvoeren en waarschuwt zelfs voor randgevallen.",
+    "intelligence.automations.desc": "Spreek je geen YAML? Geen probleem. Apple Intelligence leest je Home Assistant-automatiseringen en legt ze uit in gewone taal — wat ze activeert, welke voorwaarden gelden, welke acties ze uitvoeren en waarschuwt zelfs voor randgevallen. Je kunt ook suggesties voor verbetering opvragen of automatiseringen laten analyseren op fouten, dubbele voorwaarden en meer.",
     "intelligence.note": "Apple Intelligence vereist een ondersteund iPhone- of Mac-model met Apple Intelligence ingeschakeld. Alle verwerking gebeurt op het apparaat — je gegevens verlaten nooit je apparaat.",
 
     // Accessibility
@@ -716,7 +716,7 @@ const translations = {
     "intelligence.conversation.title": "Demandez à votre maison",
     "intelligence.conversation.desc": "Engagez une conversation naturelle avec votre maison. Posez des questions sur l'état des appareils, obtenez des résumés par pièce, vérifiez les capteurs, ou contrôlez l'éclairage, le climat, les volets, les médias et plus — le tout en langage naturel.",
     "intelligence.automations.title": "Explicateur d'automatisations",
-    "intelligence.automations.desc": "Vous ne parlez pas YAML ? Pas de problème. Apple Intelligence lit vos automatisations Home Assistant et les explique en langage courant — ce qui les déclenche, quelles conditions s'appliquent, quelles actions sont exécutées, et signale même les cas limites.",
+    "intelligence.automations.desc": "Vous ne parlez pas YAML ? Pas de problème. Apple Intelligence lit vos automatisations Home Assistant et les explique en langage courant — ce qui les déclenche, quelles conditions s'appliquent, quelles actions sont exécutées, et signale même les cas limites. Vous pouvez également demander des suggestions d'amélioration ou analyser vos automatisations pour détecter des erreurs, des conditions en double, et plus encore.",
     "intelligence.note": "Apple Intelligence nécessite un modèle iPhone ou Mac compatible avec Apple Intelligence activé. Tout le traitement se fait sur l'appareil — vos données ne quittent jamais votre appareil.",
 
     // Accessibility
@@ -994,7 +994,7 @@ const translations = {
     "intelligence.conversation.title": "Frag dein Zuhause",
     "intelligence.conversation.desc": "Führe ein natürliches Gespräch mit deinem Zuhause. Stelle Fragen zum Gerätestatus, erhalte Raumzusammenfassungen, prüfe Sensorwerte oder steuere Licht, Klima, Jalousien, Medien und mehr — alles in natürlicher Sprache.",
     "intelligence.automations.title": "Automatisierungs-Erklärer",
-    "intelligence.automations.desc": "Du sprichst kein YAML? Kein Problem. Apple Intelligence liest deine Home Assistant-Automatisierungen und erklärt sie in einfacher Sprache — was sie auslöst, welche Bedingungen gelten, welche Aktionen ausgeführt werden und warnt sogar vor Sonderfällen.",
+    "intelligence.automations.desc": "Du sprichst kein YAML? Kein Problem. Apple Intelligence liest deine Home Assistant-Automatisierungen und erklärt sie in einfacher Sprache — was sie auslöst, welche Bedingungen gelten, welche Aktionen ausgeführt werden und warnt sogar vor Sonderfällen. Du kannst auch Verbesserungsvorschläge anfordern oder Automatisierungen auf Fehler, doppelte Bedingungen und mehr analysieren lassen.",
     "intelligence.note": "Apple Intelligence erfordert ein unterstütztes iPhone- oder Mac-Modell mit aktivierter Apple Intelligence. Die gesamte Verarbeitung erfolgt auf dem Gerät — deine Daten verlassen nie dein Gerät.",
 
     // Accessibility
@@ -1272,7 +1272,7 @@ const translations = {
     "intelligence.conversation.title": "Pregunta a tu hogar",
     "intelligence.conversation.desc": "Mantén una conversación natural con tu hogar. Haz preguntas sobre el estado de dispositivos, obtén resúmenes por habitación, consulta sensores, o controla luces, clima, persianas, multimedia y más — todo en lenguaje natural.",
     "intelligence.automations.title": "Explicador de automatizaciones",
-    "intelligence.automations.desc": "¿No hablas YAML? Sin problema. Apple Intelligence lee tus automatizaciones de Home Assistant y las explica en lenguaje sencillo — qué las activa, qué condiciones aplican, qué acciones realizan e incluso advierte sobre casos especiales.",
+    "intelligence.automations.desc": "¿No hablas YAML? Sin problema. Apple Intelligence lee tus automatizaciones de Home Assistant y las explica en lenguaje sencillo — qué las activa, qué condiciones aplican, qué acciones realizan e incluso advierte sobre casos especiales. También puedes solicitar sugerencias de mejora o analizar automatizaciones en busca de errores, condiciones duplicadas y más.",
     "intelligence.note": "Apple Intelligence requiere un modelo de iPhone o Mac compatible con Apple Intelligence activado. Todo el procesamiento ocurre en el dispositivo — tus datos nunca salen de tu dispositivo.",
 
     // Accessibility
@@ -1550,7 +1550,7 @@ const translations = {
     "intelligence.conversation.title": "Chiedi alla tua casa",
     "intelligence.conversation.desc": "Avvia una conversazione naturale con la tua casa. Fai domande sullo stato dei dispositivi, ottieni riepiloghi per stanza, controlla i sensori, oppure gestisci luci, clima, tapparelle, media e altro — tutto in linguaggio naturale.",
     "intelligence.automations.title": "Spiegatore di automazioni",
-    "intelligence.automations.desc": "Non parli YAML? Nessun problema. Apple Intelligence legge le tue automazioni Home Assistant e le spiega in linguaggio semplice — cosa le attiva, quali condizioni si applicano, quali azioni eseguono e avvisa persino di casi particolari.",
+    "intelligence.automations.desc": "Non parli YAML? Nessun problema. Apple Intelligence legge le tue automazioni Home Assistant e le spiega in linguaggio semplice — cosa le attiva, quali condizioni si applicano, quali azioni eseguono e avvisa persino di casi particolari. Puoi anche richiedere suggerimenti per miglioramenti o analizzare le automazioni per errori, condizioni duplicate e altro.",
     "intelligence.note": "Apple Intelligence richiede un modello iPhone o Mac supportato con Apple Intelligence attivata. Tutta l'elaborazione avviene sul dispositivo — i tuoi dati non lasciano mai il tuo dispositivo.",
 
     // Accessibility
@@ -1828,7 +1828,7 @@ const translations = {
     "intelligence.conversation.title": "Pergunta à tua casa",
     "intelligence.conversation.desc": "Tem uma conversa natural com a tua casa. Faz perguntas sobre o estado dos dispositivos, obtém resumos por divisão, verifica sensores, ou controla luzes, clima, estores, multimédia e mais — tudo em linguagem natural.",
     "intelligence.automations.title": "Explicador de automatizações",
-    "intelligence.automations.desc": "Não falas YAML? Sem problema. A Apple Intelligence lê as tuas automatizações do Home Assistant e explica-as em linguagem simples — o que as ativa, que condições se aplicam, que ações executam e até avisa sobre casos especiais.",
+    "intelligence.automations.desc": "Não falas YAML? Sem problema. A Apple Intelligence lê as tuas automatizações do Home Assistant e explica-as em linguagem simples — o que as ativa, que condições se aplicam, que ações executam e até avisa sobre casos especiais. Também podes pedir sugestões de melhoria ou analisar automatizações em busca de erros, condições duplicadas e mais.",
     "intelligence.note": "Apple Intelligence requer um modelo de iPhone ou Mac compatível com Apple Intelligence ativada. Todo o processamento acontece no dispositivo — os teus dados nunca saem do teu dispositivo.",
 
     // Accessibility
@@ -2106,7 +2106,7 @@ const translations = {
     "intelligence.conversation.title": "Zapytaj swój dom",
     "intelligence.conversation.desc": "Prowadź naturalną rozmowę ze swoim domem. Zadawaj pytania o stan urządzeń, uzyskaj podsumowania pokojów, sprawdzaj czujniki, lub steruj oświetleniem, klimatem, roletami, multimediami i więcej — wszystko w naturalnym języku.",
     "intelligence.automations.title": "Wyjaśniacz automatyzacji",
-    "intelligence.automations.desc": "Nie mówisz w YAML? Żaden problem. Apple Intelligence czyta Twoje automatyzacje Home Assistant i wyjaśnia je prostym językiem — co je uruchamia, jakie warunki obowiązują, jakie akcje wykonują, a nawet ostrzega o przypadkach brzegowych.",
+    "intelligence.automations.desc": "Nie mówisz w YAML? Żaden problem. Apple Intelligence czyta Twoje automatyzacje Home Assistant i wyjaśnia je prostym językiem — co je uruchamia, jakie warunki obowiązują, jakie akcje wykonują, a nawet ostrzega o przypadkach brzegowych. Możesz także poprosić o sugestie ulepszeń lub przeanalizować automatyzacje pod kątem błędów, zduplikowanych warunków i nie tylko.",
     "intelligence.note": "Apple Intelligence wymaga obsługiwanego modelu iPhone lub Mac z włączonym Apple Intelligence. Całe przetwarzanie odbywa się na urządzeniu — Twoje dane nigdy nie opuszczają urządzenia.",
 
     // Accessibility
@@ -2384,7 +2384,7 @@ const translations = {
     "intelligence.conversation.title": "Fråga ditt hem",
     "intelligence.conversation.desc": "Ha en naturlig konversation med ditt hem. Ställ frågor om enhetsstatus, få rumssammanfattningar, kontrollera sensorer, eller styr lampor, klimat, persienner, media och mer — allt på naturligt språk.",
     "intelligence.automations.title": "Automatiseringsförklarare",
-    "intelligence.automations.desc": "Talar du inte YAML? Inga problem. Apple Intelligence läser dina Home Assistant-automatiseringar och förklarar dem på vanligt språk — vad som utlöser dem, vilka villkor som gäller, vilka åtgärder som utförs och varnar till och med för specialfall.",
+    "intelligence.automations.desc": "Talar du inte YAML? Inga problem. Apple Intelligence läser dina Home Assistant-automatiseringar och förklarar dem på vanligt språk — vad som utlöser dem, vilka villkor som gäller, vilka åtgärder som utförs och varnar till och med för specialfall. Du kan också begära förbättringsförslag eller analysera automatiseringar för fel, dubblerade villkor och mer.",
     "intelligence.note": "Apple Intelligence kräver en iPhone- eller Mac-modell som stöds med Apple Intelligence aktiverat. All bearbetning sker på enheten — dina data lämnar aldrig din enhet.",
 
     // Accessibility
