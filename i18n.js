@@ -2481,6 +2481,11 @@ function setLanguage(lang) {
     currentEl.textContent = langFlags[lang] + " " + langNames[lang];
   }
 
+  // Update screenshot images for current language
+  document.querySelectorAll('img[src^="screenshots/"]').forEach((img) => {
+    img.src = img.src.replace(/screenshots\/[a-z]{2}\//, "screenshots/" + lang + "/");
+  });
+
   // Close dropdown
   const dropdown = document.querySelector(".lang-dropdown");
   if (dropdown) dropdown.classList.remove("open");
