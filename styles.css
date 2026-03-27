@@ -1165,6 +1165,10 @@ footer {
 
   .features-grid { grid-template-columns: 1fr; }
 
+  .intelligence-grid { grid-template-columns: 1fr; }
+
+  .accessibility-grid { grid-template-columns: 1fr; }
+
   .domains-grid { grid-template-columns: 1fr 1fr; }
 
   .how-grid {
@@ -1180,6 +1184,103 @@ footer {
   .pro-card-visual { padding: 24px; }
 
   .footer-links { gap: 16px; }
+}
+
+/* ── Apple Intelligence ───────────────────────────────────── */
+.intelligence-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.intelligence-card {
+  padding: 28px;
+  position: relative;
+}
+
+.intelligence-icon {
+  width: 48px; height: 48px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.intelligence-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.intelligence-badge.free {
+  background: rgba(52,211,153,0.15);
+  color: #34d399;
+}
+
+.intelligence-badge.pro {
+  background: rgba(124,92,247,0.15);
+  color: #a78bfa;
+}
+
+.intelligence-card h3 {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.intelligence-card p {
+  font-size: 15px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.intelligence-note {
+  text-align: center;
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 32px;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+/* ── Accessibility ───────────────────────────────────────── */
+.accessibility-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.accessibility-card {
+  padding: 28px;
+}
+
+.accessibility-icon {
+  width: 48px; height: 48px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.accessibility-card h3 {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.accessibility-card p {
+  font-size: 15px;
+  color: var(--muted);
+  line-height: 1.6;
 }
 
 /* Small mobile */
