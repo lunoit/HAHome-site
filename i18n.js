@@ -2536,8 +2536,11 @@ function setLanguage(lang) {
   }
 
   // Update screenshot images for current language
-  document.querySelectorAll('img[src^="screenshots/"]').forEach((img) => {
-    img.src = img.src.replace(/screenshots\/[a-z]{2}\//, "screenshots/" + lang + "/");
+  document.querySelectorAll("img").forEach((img) => {
+    const src = img.getAttribute("src");
+    if (src && src.startsWith("screenshots/")) {
+      img.setAttribute("src", src.replace(/screenshots\/[a-z]{2}\//, "screenshots/" + lang + "/"));
+    }
   });
 
   // Close dropdown
